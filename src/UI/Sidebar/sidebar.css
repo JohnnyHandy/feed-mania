@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+    .sidebar{
+        background-color: #9fa8a3;
+        height:100%;
+        width:100%;
+        border:1px solid black
+    }
+   .navitems{
+       max-height:80px;
+       max-width:150px
+   }
+
+}
