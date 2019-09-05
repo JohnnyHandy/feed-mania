@@ -5,13 +5,13 @@ import Content from '../Content/content'
 
 import './layout.css'
 
-const layout = () => {
+const layout = (props) => {
     return(
         <div>
             <Navbar/>
             <div className='layout'>
-            <SideBar/>
-            <Content/>
+            <SideBar changeFeed = {props.changeFeed}/>
+            <Content contentData = {props.contentData}/>
             </div>
         </div>
     )

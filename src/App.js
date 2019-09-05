@@ -7,8 +7,11 @@ import Layout from './UI/Layout/layout'
 
 
 class App extends Component {
+  state={
+    jsonObj:undefined
+  }
   
-  FetchDataFromRssFeed() {
+  FetchDataFromRssFeed(url) {
     var CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
     // var urlArray = []
     var request = new XMLHttpRequest();
@@ -16,17 +19,22 @@ class App extends Component {
       if (request.readyState === 4 && request.status === 200) {
         var myObj = JSON.parse(request.responseText);
         console.log(myObj)
+        this.setState({jsonObj:myObj})
       }
     }
-    request.open("GET",CORS_PROXY+'https://feed2json.org/convert?url=http%3A%2F%2Frss.cnn.com%2Frss%2Fcnn_world.rss', true);
+    request.open("GET",CORS_PROXY+url, true);
     request.send();
   }
 
-  componentDidMount() {
-    this.FetchDataFromRssFeed()
-  }
+  // componentDidMount() {
+  //   this.FetchDataFromRssFeed()
+  // }
+  
  
 render(){
+  const changeFeed = (data)=>{
+   this.FetchDataFromRssFeed(data)
+  }
 //   let parser = new Parser()
 //   const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
 
@@ -38,7 +46,9 @@ render(){
 //   })
 // })
   return (
-    <Layout className='layout'/>
+    <Layout contentData = {this.state.jsonObj ? this.state.jsonObj : null} 
+    changeFeed = {(data)=>changeFeed(data)} 
+    className='layout'/>
   );
 }
 

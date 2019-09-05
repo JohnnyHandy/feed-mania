@@ -1,6 +1,8 @@
 @media only screen and (max-width: 600px) {
     .imgClass{
         width:inherit;
-        height:inherit
+        height:inherit;
+        background-color:#69707a;
+        padding:5px;
     }
 }
