@@ -6,11 +6,11 @@ import './sidebar.css'
 
 const sidebar = () =>{
     return(
-        <UncontrolledCollapse toggler="#toggler" style={{width:'150px'}}>
-            <Nav className='sidebar' vertical>
+        <UncontrolledCollapse toggler="#toggler" style={{width:'100px'}}>
+            <Nav className='sidebar'>
             <NavItem className='navitems'><BBC/></NavItem>
             <NavItem className='navitems'><ESPN/></NavItem>
-            <NavItem className='navitems' style={{height:'80px'}}><FOX/></NavItem>
+            <NavItem className='navitems'><FOX/></NavItem>
             <NavItem className='navitems'><NYTIMES/></NavItem>
             <NavItem className='navitems'><REUTERS/></NavItem>
             <NavItem className='navitems'><WALLSTREET/></NavItem>
@@ -18,8 +18,7 @@ const sidebar = () =>{
             <NavItem className='navitems'><CNN/></NavItem>
             <NavItem className='navitems'><ABC/></NavItem>
             <NavItem className='navitems'><YAHOO/></NavItem>
-
-        </Nav>
+            </Nav>
         </UncontrolledCollapse>
         
     )
