@@ -1,4 +1,4 @@
-﻿# FeedMania
+﻿# Feed Mania
 
 
 ## Content
