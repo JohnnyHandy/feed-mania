@@ -1,8 +1,7 @@
 import React,{Component} from 'react';
 
 import Layout from './UI/Layout/layout'
-import './app.css'
-import * as url from './utility/stringKeys'
+// import * as url from './utility/stringKeys'
 
 // import Parser from 'rss-parser'
 
@@ -11,7 +10,7 @@ class App extends Component {
   
   FetchDataFromRssFeed() {
     var CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-    var urlArray = []
+    // var urlArray = []
     var request = new XMLHttpRequest();
     request.onreadystatechange = () => {
       if (request.readyState === 4 && request.status === 200) {
