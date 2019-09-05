@@ -8,16 +8,16 @@ const sidebar = () =>{
     return(
         <UncontrolledCollapse toggler="#toggler" style={{width:'150px'}}>
             <Nav className='sidebar' vertical>
-            <NavItem><BBC/></NavItem>
-            <NavItem><ESPN/></NavItem>
-            <NavItem style={{height:'80px'}}><FOX/></NavItem>
-            <NavItem><NYTIMES/></NavItem>
-            <NavItem><REUTERS/></NavItem>
-            <NavItem><WALLSTREET/></NavItem>
-            <NavItem><VOX/></NavItem>
-            <NavItem><CNN/></NavItem>
-            <NavItem><ABC/></NavItem>
-            <NavItem><YAHOO/></NavItem>
+            <NavItem className='navitems'><BBC/></NavItem>
+            <NavItem className='navitems'><ESPN/></NavItem>
+            <NavItem className='navitems' style={{height:'80px'}}><FOX/></NavItem>
+            <NavItem className='navitems'><NYTIMES/></NavItem>
+            <NavItem className='navitems'><REUTERS/></NavItem>
+            <NavItem className='navitems'><WALLSTREET/></NavItem>
+            <NavItem className='navitems'><VOX/></NavItem>
+            <NavItem className='navitems'><CNN/></NavItem>
+            <NavItem className='navitems'><ABC/></NavItem>
+            <NavItem className='navitems'><YAHOO/></NavItem>
 
         </Nav>
         </UncontrolledCollapse>
