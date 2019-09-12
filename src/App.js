@@ -1,23 +1,35 @@
 import React,{Component} from 'react';
 
 import Layout from './UI/Layout/layout'
-// import * as url from './utility/stringKeys'
+import axios from 'axios'
 
-import Parser from 'rss-parser'
+const RSSParser = require('rss-parser');
 
-let parser = new Parser();
+// (async () => {
+//   const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
+//   let feed = await parser.parseURL(CORS_PROXY+'https://feeds.foxnews.com/foxnews/world.xml');
+//   console.log(feed.title);
 
-(async () => {
-  const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-  let feed = await parser.parseURL(CORS_PROXY+'https://feeds.foxnews.com/foxnews/world.xml');
-  console.log(feed.title);
+//   feed.items.forEach(item => {
+//     console.log(item.title + ':' + item.link)
+//   });
 
-  feed.items.forEach(item => {
-    console.log(item.title + ':' + item.link)
-  });
-
-})();
+// })();
 class App extends Component {
+ getWiredFeed(){
+   const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
+    axios.get(CORS_PROXY+'http://voxeu.org/feed/popular/rss.xml')
+    .then((res) => {
+      let parser = new RSSParser();
+      parser.parseString(res.data, (err, feed)=> {
+        console.log(feed)
+        console.log(err)
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+  }
   state={
     jsonObj:undefined
   }
@@ -38,25 +50,15 @@ class App extends Component {
     request.send();
   }
 
-  // componentDidMount() {
-  //   this.FetchDataFromRssFeed()
-  // }
+  componentDidMount() {
+    this.getWiredFeed()
+  }
   
  
 render(){
   const changeFeed = (data)=>{
    this.FetchDataFromRssFeed(data)
   }
-//   let parser = new Parser()
-//   const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-
-//  parser.parseURL(CORS_PROXY + 'https://feeds.reuters.com/Reuters/worldNews', function(err, feed) {
-//   console.log(feed);
-//   console.log(err)
-//   feed.items.forEach(function(entry) {
-//     console.log(entry.title + ':' + entry.link);
-//   })
-// })
   return (
     <Layout contentData = {this.state.jsonObj ? this.state.jsonObj : null} 
     changeFeed = {(data)=>changeFeed(data)} 
