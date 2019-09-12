@@ -3,13 +3,25 @@ import React,{Component} from 'react';
 import Layout from './UI/Layout/layout'
 // import * as url from './utility/stringKeys'
 
-// import Parser from 'rss-parser'
+import Parser from 'rss-parser'
 
+let parser = new Parser();
 
+(async () => {
+  const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
+  let feed = await parser.parseURL(CORS_PROXY+'https://feeds.foxnews.com/foxnews/world.xml');
+  console.log(feed.title);
+
+  feed.items.forEach(item => {
+    console.log(item.title + ':' + item.link)
+  });
+
+})();
 class App extends Component {
   state={
     jsonObj:undefined
   }
+  
   
   FetchDataFromRssFeed(url) {
     var CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
