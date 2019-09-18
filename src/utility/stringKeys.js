@@ -46,6 +46,11 @@ export const FOX_NEWS_POLITICS = 'https://feed2json.org/convert?url=http%3A%2F%2
 export const CNN_POLITICS = 'http://rss.cnn.com/rss/cnn_allpolitics.rss' //RSS-PARSER (TITLE AND SNIPPET)
 export const REUTERS_POLITICS = 'https://feed2json.org/convert?url=http%3A%2F%2Ffeeds.reuters.com%2FReuters%2FPoliticsNews' //XMLHTTP(TITLE AND SUMMARY NEED TAG FIX)
 export const SLATE = 'http://www.slate.com/articles/news_and_politics/politics.teaser.all.10.rss/' //RSS-PARSER (TITLE AND SNIPPET)
+export const THE_NATION = 'https://www.thenation.com/feed/?post_type=article'//RSS_PARSER AND SNIPPET; SUMMARY WITH CONTENT HTML
+export const MSNBC ='https://feed2json.org/convert?url=http%3A%2F%2Fwww.msnbc.com%2Ffeeds%2Flatest' //XMLHTTP (TITLE AND SUMMARY)
+
 //GAMING
+export const GAMESPOT = 'https://www.gamespot.com/feeds/mashup/'//RSS_PARSER (title and contentsnippet)
+
 
 //HEALTH
