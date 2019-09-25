@@ -51,6 +51,14 @@ export const MSNBC ='https://feed2json.org/convert?url=http%3A%2F%2Fwww.msnbc.co
 
 //GAMING
 export const GAMESPOT = 'https://www.gamespot.com/feeds/mashup/'//RSS_PARSER (title and contentsnippet)
-
+export const XBOX = 'http://news.xbox.com/feed' //(RSS-PARSER) TITLE AND CONTENTSNIPPET 
+export const NITENDO = 'http://www.nintendolife.com/feeds/latest' //RSS-PARSER TITLE CONTENT CONTENTSNIPPET
+export const INDIE_GAMES='http://www.indiegames.com/atom.xml' //RSS-PARSER TITLE AND DESCRIPTION
+export const ARS = 'http://feeds.arstechnica.com/arstechnica/gaming/' //XMLHTTP TITLE AND SUMMARY
+export const POLYGON = 'https://www.polygon.com/rss/index.xml' //RSS-FEED TITLE CONTENTSNIPPET AND CONTENT WITH HTML
+export const TOUCHARCADE='http://toucharcade.com/feed/' //RSS-FEED TITLE CONTENTSNIPPET CONTENT ENCODED HTML
+export const REDDIT_GAMES='https://www.reddit.com/r/gamers/.rss' //RSS-FEED TITLE AND CONTENT WITH HTML
+export const ROCKPAPERSHOTGUN='https://www.rockpapershotgun.com/feed' //RSS-FEED TITLE AND CONTENTSNIPPET, CONTENT:ENCODED
+export const PCGAMESN='https://www.pcgamesn.com/rss' //RSS-PARSER TITLE AND CONTENTSNIPET
 
 //HEALTH
