@@ -50,9 +50,9 @@ class App extends Component {
     request.send();
   }
 
-  componentDidMount() {
-    this.getWiredFeed()
-  }
+  // componentDidMount() {
+  //   this.getWiredFeed()
+  // }
   
  
 render(){
