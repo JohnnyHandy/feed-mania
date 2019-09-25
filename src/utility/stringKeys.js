@@ -1,17 +1,30 @@
-//WORLD
-export const NY_POST='https://nypost.com/feed/' //RSS-FEED (TITLE AND CONTENTSNIPPET)
-export const BBC_NEWS = 'http://feeds.bbci.co.uk/news/world/rss.xml'; //RSS-PARSER (TITLE AND CONTENTSNIPPET)
-export const FOX_NEWS = 'https://feed2json.org/convert?url=http%3A%2F%2Ffeeds.foxnews.com%2Ffoxnews%2Fworld'; //XMLHTTP
-export const NY_TIMES = 'https://feed2json.org/convert?url=https%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FWorld.xml'; //RSS-PARSER https://rss.nytimes.com/services/xml/rss/nyt/World.xml
-export const REUTERS = 'https://feed2json.org/convert?url=http%3A%2F%2Ffeeds.reuters.com%2FReuters%2FworldNews'; //XMLHTTP (TITLE AND SUMMARY)
-export const WALL_STREET = 'https://feed2json.org/convert?url=https%3A%2F%2Ffeeds.a.dj.com%2Frss%2FRSSWorldNews.xml'; // RSS - PARSER https://feeds.a.dj.com/rss/RSSWorldNews.xml
-export const VOX = 'https://feed2json.org/convert?url=https%3A%2F%2Fwww.huffpost.com%2Fsection%2Ffront-page%2Ffeed';  //XMLHTTP
-export const CNN = 'https://feed2json.org/convert?url=http%3A%2F%2Frss.cnn.com%2Frss%2Fcnn_world.rss'; //RSS-PARSER
-export const ABC = 'https://feed2json.org/convert?url=http%3A%2F%2Fabcnews.go.com%2Fabcnews%2Ftopstories'; //RSS-PARSER
-export const YAHOO_NEWS = 'https://feed2json.org/convert?url=https%3A%2F%2Fwww.yahoo.com%2Fnews%2Frss%2Ftopstories' //RSS-PARSER
+//METHODS 
+//0= TITLE AND CONTENTSNIPPET
+//1=TITLE AND SUMMARY
+//2=TITLE AND CONTENT
+//3=TITLE AND CONTENT WITH HTML
+//4=TITLE AND CONTENT:ENCODED
+//5= TITLE AND CONTENT_HTML
+//PARSER
+//0=RSS-PARSER
+//1 =XMLHTTP
+//FIX
+//0=summary PROPERTY WITH HTML CONTENT
 
+//WORLD
+export const NY_POST={url:'https://nypost.com/feed/',method:'0', parser:'0',enclosure:'url'} //RSS-FEED (TITLE AND CONTENTSNIPPET)
+export const BBC_NEWS = {url:'http://feeds.bbci.co.uk/news/world/rss.xml',method:'0',parser:'0'}; //RSS-PARSER (TITLE AND CONTENTSNIPPET)
+export const FOX_NEWS = {url:'https://feed2json.org/convert?url=http%3A%2F%2Ffeeds.foxnews.com%2Ffoxnews%2Fworld',method:'1',parser:'1',fix:'0'}; //XMLHTTP
+export const NY_TIMES = {url:'https://rss.nytimes.com/services/xml/rss/nyt/World.xml',method:'0',parser:'0'}; //RSS-PARSER https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+export const REUTERS = {url:'https://feed2json.org/convert?url=http%3A%2F%2Ffeeds.reuters.com%2FReuters%2FworldNews',method:'1',parser:'1',fix:'0'}; //XMLHTTP (TITLE AND SUMMARY)
+export const WALL_STREET = {url:'https://feeds.a.dj.com/rss/RSSWorldNews.xml',method:'0',parser:'0'}; // RSS - PARSER https://feeds.a.dj.com/rss/RSSWorldNews.xml
+export const CNN = {url:'http://rss.cnn.com/rss/edition_world.rss',method:'0',parser:'0'}; //RSS-PARSER
+export const ABC = {url:'http://feeds.abcnews.com/abcnews/internationalheadlines',method:'0',parser:'0'}; //RSS-PARSER
+export const YAHOO_NEWS = {url:'https://www.yahoo.com/news/world/rss',method:'0',parser:'0',html:'content'}//RSS-PARSER
+export const BUZZFEED_WORLD = {url:'https://www.buzzfeed.com/world.xml',method:'0',parser:'0',html:'content'}
 
 //SPORTS
+export const SPORTINGNEW={url:'http://www.sportingnews.com/rss',method:'0',parser:'0',enclosure:'url',html:'content'}
 export const ESPN = 'https://feed2json.org/convert?url=http%3A%2F%2Fwww.espn.com%2Fespn%2Frss%2Fnews'; //RSS-PARSER
 export const BBC_SPORTS='http://feeds.bbci.co.uk/sport/rss.xml?edition=int#' //RSS-FEED (TITLE AND CONTENTSNIPPET)
 export const NFL = 'https://feed2json.org/convert?url=http%3A%2F%2Fwww.nfl.com%2Frss%2Frsslanding%3FsearchString%3Dhome' //XMLHTTP (title and summay)
