@@ -3,12 +3,16 @@
         background-color: #424954;
         height:100%;
         width:100%;
-        border:1px solid black
+        border:1px solid black;
+        justify-content:center;
     }
    .navitems{
-       margin:5px auto;
-       width:75px;
+       margin:auto;
+       width:120px;
        height:50px;
+       font-family:'Playfair Display', serif;
+       color:white;
+       text-align:center;
    }
    
 }

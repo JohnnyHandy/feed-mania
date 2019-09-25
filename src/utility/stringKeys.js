@@ -62,3 +62,11 @@ export const ROCKPAPERSHOTGUN='https://www.rockpapershotgun.com/feed' //RSS-FEED
 export const PCGAMESN='https://www.pcgamesn.com/rss' //RSS-PARSER TITLE AND CONTENTSNIPET
 
 //HEALTH
+
+export const BBC_HEALTH = 'http://feeds.bbci.co.uk/news/health/rss.xml' //RSS-PARSER TITLE AND CONTENT SNIPPET
+export const WEBMD='http://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC' //RSS-PARSER TITLE AND CONTENT SNIPPET, CONTENT:ENCODED
+export const HARVARD_HEALTH='http://www.health.harvard.edu/blog/feed' //rss-parser title contentsnippet content encoded
+export const MYFITNESSPAL = 'http://blog.myfitnesspal.com/feed' //RSS-PARSER title contentsnippet enclosure
+export const PSYCHCENTRAL ='http://psychcentral.com/blog/feed/atom' //RSS-PARSER TITLE CONTENTSNIPPET
+export const NY_TIMES_HEALTH='https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/section/health/rss.xml' //RSS-PARSER TITLE CONTENTSNIPPET
+export const WP_HEALTH = 'http://feeds.washingtonpost.com/rss/rss_to-your-health' //RSS-PARSER TITLE CONTENTSNIPPET
