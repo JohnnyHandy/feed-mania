@@ -10,13 +10,13 @@ const sidebar = (props) =>{
     return(
         <div style={{width:'150px'}}>
           <Nav className='sidebar'>
-          <NavItem className='navitems'> <i class="fas fa-globe" style={{float:'left',marginTop:'4px'}}></i> World</NavItem>
-          <NavItem className='navitems'> <i class="fas fa-football-ball" style={{float:'left',marginTop:'4px'}}></i> Sports</NavItem>
-          <NavItem className='navitems'> <i class="fas fa-robot" style={{float:'left',marginTop:'4px'}}></i> Technology</NavItem>
-          <NavItem className='navitems'> <i class="fas fa-comment-dollar" style={{float:'left',marginTop:'4px'}}></i> Business</NavItem>
-          <NavItem className='navitems'> <i class="fas fa-bullhorn" style={{float:'left',marginTop:'4px'}}></i> Politics</NavItem>
-          <NavItem className='navitems'> <i class="fas fa-gamepad" style={{float:'left',marginTop:'4px'}}></i> Gaming</NavItem>
-          <NavItem className='navitems'> <i class="fas fa-heartbeat" style={{float:'left',marginTop:'4px'}}></i> Health</NavItem>
+          <NavItem className='navitems'> <i className="fas fa-globe" style={{float:'left',marginTop:'4px'}}></i> World</NavItem>
+          <NavItem className='navitems'> <i className="fas fa-football-ball" style={{float:'left',marginTop:'4px'}}></i> Sports</NavItem>
+          <NavItem className='navitems'> <i className="fas fa-robot" style={{float:'left',marginTop:'4px'}}></i> Technology</NavItem>
+          <NavItem className='navitems'> <i className="fas fa-comment-dollar" style={{float:'left',marginTop:'4px'}}></i> Business</NavItem>
+          <NavItem className='navitems'> <i className="fas fa-bullhorn" style={{float:'left',marginTop:'4px'}}></i> Politics</NavItem>
+          <NavItem className='navitems'> <i className="fas fa-gamepad" style={{float:'left',marginTop:'4px'}}></i> Gaming</NavItem>
+          <NavItem className='navitems'> <i className="fas fa-heartbeat" style={{float:'left',marginTop:'4px'}}></i> Health</NavItem>
              {/**<NavItem className='navitems' onClick = {()=>props.changeFeed(feedKeys.BBC_NEWS)}><BBC/></NavItem>
             <NavItem className='navitems' onClick = {()=>props.changeFeed(feedKeys.ESPN)}><ESPN/></NavItem>
             <NavItem className='navitems' onClick = {()=>props.changeFeed(feedKeys.FOX_NEWS)}><FOX/></NavItem>
