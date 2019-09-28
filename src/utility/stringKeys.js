@@ -1,21 +1,24 @@
 //METHODS 
-//0= TITLE AND CONTENTSNIPPET
-//1=TITLE AND SUMMARY
-//2=TITLE AND CONTENT
-//3=TITLE AND CONTENT WITH HTML
-//4=TITLE AND CONTENT:ENCODED
-//5= TITLE AND CONTENT_HTML
-//6= TITLE CONTENT SNIPPET, CONTENT WITH HTML AND CONTENT ENCODED
+//0 = TITLE AND CONTENTSNIPPET
+//1 = TITLE AND SUMMARY
+//2 = TITLE AND CONTENT
+//3 = TITLE AND CONTENT WITH HTML
+//4 = TITLE AND CONTENT:ENCODED
+//5 = TITLE AND CONTENT_HTML
+//6 = TITLE CONTENT SNIPPET, CONTENT WITH HTML AND CONTENT ENCODED
 //7 = TITLE CONTENT SNIPPET CONTENT WITH HTML
 //8 = TITLE CONTENT SNIPPET CONTENT:ENCODED WITH HTML
 //9 = TITLE CONTENT SNIPPET CONTENT:ENCONDED WITH HTML AND CONTENT WITH HTML
 //10 = TITLE SUMMARY AND CONTENT HTML
+
 
 //PARSER
 //0=RSS-PARSER
 //1 =XMLHTTP
 //FIX
 //0=summary PROPERTY WITH HTML CONTENT
+//1 = CONTENTSNIPPET beggining with "call to click"
+//2 = REDDIT AUTOPROMOTION TITLE
 
 //WORLD
 export const NY_POST={url:'https://nypost.com/feed/',method:'0', parser:'0',enclosure:'url'} //RSS-FEED (TITLE AND CONTENTSNIPPET)
@@ -30,7 +33,7 @@ export const YAHOO_NEWS = {url:'https://www.yahoo.com/news/world/rss',method:'0'
 export const BUZZFEED_WORLD = {url:'https://www.buzzfeed.com/world.xml',method:'0',parser:'0',html:'content'}
 
 //SPORTS
-export const SPORTINGNEW={url:'http://www.sportingnews.com/rss',method:'0',parser:'0',enclosure:'url',html:'content'}
+export const SPORTING_NEWS={url:'http://www.sportingnews.com/rss',method:'0',parser:'0',enclosure:'url',html:'content'}
 export const ESPN = {url:'http://www.espn.com/espn/rss/news',method:'0',parser:'0'}; //RSS-PARSER
 export const BBC_SPORTS={url:'http://feeds.bbci.co.uk/sport/rss.xml',method:'0',parser:'0'} //RSS-FEED (TITLE AND CONTENTSNIPPET)
 export const ESPN_NFL = {url:'http://www.espn.com/blog/feed?blog=nflnation', method:'0',parser:'0'} 
@@ -79,10 +82,11 @@ export const GAMESPOT = {url:'https://www.gamespot.com/feeds/mashup/',method:'0'
 export const XBOX = {url:'http://news.xbox.com/feed',method:'8',parser:'0'} //(RSS-PARSER) TITLE AND CONTENTSNIPPET 
 export const NITENDO = {url:'http://www.nintendolife.com/feeds/latest',method:'7',parser:'0'} //RSS-PARSER TITLE CONTENT CONTENTSNIPPET
 export const INDIE_GAMES={url:'http://www.indiegames.com/atom.xml',method:'9',parser:'0'} //RSS-PARSER TITLE AND DESCRIPTION
-export const ARS = 'http://feeds.arstechnica.com/arstechnica/gaming/' //XMLHTTP TITLE AND SUMMARY
-export const POLYGON = 'https://www.polygon.com/rss/index.xml' //RSS-FEED TITLE CONTENTSNIPPET AND CONTENT WITH HTML
-export const TOUCHARCADE='http://toucharcade.com/feed/' //RSS-FEED TITLE CONTENTSNIPPET CONTENT ENCODED HTML
-export const REDDIT_GAMES='https://www.reddit.com/r/gamers/.rss' //RSS-FEED TITLE AND CONTENT WITH HTML
+export const IGN = {url:'https://feed2json.org/convert?url=http%3A%2F%2Ffeeds.ign.com%2Fign%2Fgames-all', method:'10',parser:'1'}
+export const GAME_INFORMER={url:'http://www.gameinformer.com/feeds/thefeedrss.aspx',method:'7',parser:'0',fix:'1'}
+export const ARS = {url:'https://feed2json.org/convert?url=http%3A%2F%2Ffeeds.arstechnica.com%2Farstechnica%2Fgaming%2F',method:'10',parser:'1'} //XMLHTTP TITLE AND SUMMARY
+export const POLYGON = {url:'https://www.polygon.com/rss/index.xml',method:'7',parser:'0',fix:'1'} //RSS-FEED TITLE CONTENTSNIPPET AND CONTENT WITH HTML
+export const REDDIT_GAMES={url:'https://www.reddit.com/r/gamers/.rss',method:'7',parser:'0',fix:'2'} //RSS-FEED TITLE AND CONTENT WITH HTML
 export const ROCKPAPERSHOTGUN='https://www.rockpapershotgun.com/feed' //RSS-FEED TITLE AND CONTENTSNIPPET, CONTENT:ENCODED
 export const PCGAMESN='https://www.pcgamesn.com/rss' //RSS-PARSER TITLE AND CONTENTSNIPET
 
