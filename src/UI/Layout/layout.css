@@ -1,7 +1,52 @@
 @media only screen and (max-width: 600px) {
     .layout{
-        display:inline-flex;
+        display:flex;
         width:100%
+    }
+    .container{
+        align-items: center;
+        display:flex;
+        flex-direction:column;
+        height:100%;
+        justify-content: center;
+        position:relative;
+        width:100%;
+    }
+
+    .container .header-title{
+        align-items: center;
+        display:flex;
+        flex-direction:column;
+        font-family: 'Stencil', 'sans-serif';
+        font-size: 4rem;
+        height:30%;
+        justify-content: center;
+        position:absolute;
+        top:0;
+        width:100%
+    }
+
+    .container .main-navbar{
+        align-items: center;
+        background-color:#21345A;
+        bottom:0;
+        display:flex;
+        flex-direction: column;
+        height:70%;
+        justify-content: center;
+        position:absolute;
+        width:100%;
+    }
+
+    .container .main-navbar .main-item{
+        align-items:center;
+        color:#BE1010;
+        display:flex;
+        font-family: 'Stencil', 'sans-serif';
+        flex-direction: column;
+        font-size:2.3rem;
+        justify-content: center;
+        width:100%;
     }
 
 }
