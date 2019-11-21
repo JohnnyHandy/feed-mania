@@ -1,7 +1,6 @@
 import React from 'react'
-import Navbar from '../Navbar/navbar'
-import SideBar from '../Sidebar/sidebar'
-import Content from '../Content/content'
+import {BBC,ESPN,FOX,NYTIMES,REUTERS,WALLSTREET,VOX,CNN,ABC,YAHOO} from '../../assets/logos/index'
+
 
 import './layout.css'
 
@@ -12,19 +11,54 @@ const layout = (props) => {
                 <div>FEED </div><div>MANIA</div>
             </div>
             <div className='main-navbar'>
-                <div className='main-item'>World</div>
-                <div className='main-item'>Sports</div>
-                <div className='main-item'>Technology</div>
-                <div className='main-item'>Business</div>
-                <div className='main-item'>Politics</div>
-                <div className='main-item'>Gaming</div>
-                <div className='main-item'>Health</div>
+                <div className='main-item'>
+                    <i className="fas fa-globe item-icon"></i>
+                    World
+                    <i className="fas fa-globe item-icon"></i>
+                </div>
+                <div className='choice-container'>
+                    <ABC/>
+                    <BBC/>
+                    <CNN/>
+                    <ESPN/>
+                    <FOX/>
+                    <NYTIMES/>
+                    <REUTERS/>
+                    <VOX/>
+                    <WALLSTREET/>
+                    <YAHOO/>
+                </div>
+                {/* <div className='main-item'>
+                    <i className="fas fa-football-ball item-icon"></i> 
+                    Sports
+                    <i className="fas fa-football-ball item-icon"></i> 
+                </div>
+                <div className='main-item'>
+                    <i className="fas fa-robot item-icon"></i>
+                    Technology
+                    <i className="fas fa-robot item-icon"></i>
+                </div>
+                <div className='main-item'>
+                    <i className="fas fa-comment-dollar item-icon"></i>
+                    Business
+                    <i className="fas fa-comment-dollar item-icon"></i>
+                </div>
+                <div className='main-item'>
+                    <i className="fas fa-bullhorn item-icon"></i>
+                    Politics
+                    <i className="fas fa-bullhorn item-icon"></i>
+                </div>
+                <div className='main-item'>
+                    <i className="fas fa-gamepad item-icon"></i>
+                    Gaming
+                    <i className="fas fa-gamepad item-icon"></i>
+                </div>
+                <div className='main-item'>
+                    <i className="fas fa-heartbeat item-icon"></i>
+                    Health
+                    <i className="fas fa-heartbeat item-icon"></i>
+                </div> */}
             </div>
-            {/* <Navbar/>
-            <div className='layout'>
-            <SideBar changeFeed = {props.changeFeed}/>
-            <Content contentData = {props.contentData}/>
-            </div> */}
         </div>
     )
 }
