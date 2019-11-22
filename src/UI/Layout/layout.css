@@ -39,16 +39,32 @@
         width:100%;
     }
 
-    .container .main-navbar .main-item{
+    .container .main-navbar .main-item-container{
         align-items:center;
-        color:#BE1010;
         cursor:pointer;
         display:flex;
         font-family: 'Stencil', 'sans-serif';
+        justify-content: space-around;
+        position: unset;
+        top:unset;
+        transition:all 1s;
+        width:100%;
+    }
+
+    .container .main-navbar .main-item-container .main-item{
+        align-items: baseline;
+        color:#BE1010;
+        display:flex;
         font-size:2.2rem;
         justify-content: space-around;
         width:100%;
     }
+
+    .container .main-navbar .active-item{
+        position:absolute;
+        top:0
+    }
+
     .container .main-navbar .main-item .item-icon {
         margin:0 2px;
     }

@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {BrowserRouter} from 'react-router-dom'
 
 import Layout from './UI/Layout/layout'
 import axios from 'axios'
@@ -60,9 +61,12 @@ render(){
    this.FetchDataFromRssFeed(data)
   }
   return (
-    <Layout contentData = {this.state.jsonObj ? this.state.jsonObj : null} 
-    changeFeed = {(data)=>changeFeed(data)} 
-    className='layout'/>
+    <BrowserRouter>
+      <Layout contentData = {this.state.jsonObj ? this.state.jsonObj : null} 
+      changeFeed = {(data)=>changeFeed(data)} 
+      className='layout'/>
+    </BrowserRouter>
+    
   );
 }
 
