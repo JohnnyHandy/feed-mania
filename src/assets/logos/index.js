@@ -28,6 +28,25 @@ import cnnMoney from './cnnmoney.svg'
 import huffpostBusiness from './huffpostbusiness.svg'
 import fortune from './fortune.svg'
 import financialTimes from './financialtimes.svg'
+import thinkProgress from './thinkprogress.svg'
+import politicalInsider from './politicalinsider.svg'
+import foxNewsPolitics from './foxnewspolitics.svg'
+import cnnPolitics from './cnnpolitics.svg'
+import reutersPolitics from './reuterspolitics.svg'
+import theNation from './thenation.svg'
+import slate from './slate.svg'
+import msnbc from './msnbc.svg'
+import gamespot from './gamespot.svg'
+import xbox from './xbox.svg'
+import nintendoLife from './nintendolife.svg'
+import indieGames from './indiegames.svg'
+import ign from './ign.svg'
+import gameInformer from './gameinformer.svg'
+import ars from './ars.svg'
+import polygon from './polygon.svg'
+import redditGaming from './redditgaming.svg'
+import rockPaperShotgun from './rockpapershotgun.svg'
+import pcGamesN from './pcgamesn.svg'
 import fox from './fox-news.svg'
 import nytimes from './new-york-times.svg'
 import reuters from './reuters-2-1.svg'
@@ -127,6 +146,84 @@ export const fortuneLogo = ()=>{
 
 export const financialTimesLogo = ()=>{
     return(<img className='imgClass' alt='financialTimes' src={financialTimes} />)
+}
+
+//Politics
+export const thinkProgressLogo = ()=>{
+    return(<img className='imgClass' alt='thinkprogress' src={thinkProgress}/>)
+}
+
+export const politicalInsiderLogo = ()=>{
+    return(<img className='imgClass' alt='politicalinsider' src={politicalInsider} />)
+}
+
+export const foxNewsPoliticsLogo = ()=>{
+    return(<img className='imgClass' alt='foxnewspolitics' src={foxNewsPolitics}/>)
+}
+
+export const cnnPoliticsLogo = ()=>{
+    return(<img className='imgClass' alt='cnnpolitics' src={cnnPolitics}/>)
+}
+
+export const reutersPoliticsLogo = ()=>{
+    return(<img className='imgClass' alt='reuterspolitics' src={reutersPolitics}/>)
+}
+
+export const slateLogo = ()=>{
+    return(<img className='imgClass' alt='slate' src={slate}/>)
+}
+
+export const theNationLogo = ()=>{
+    return(<img className='imgClass' alt='thenation' src={theNation}/>)
+}
+
+export const msnbcLogo = ()=>{
+    return(<img className='imgClass' alt='msnbc' src={msnbc} />)
+}
+
+//Gaming
+export const gameSpotLogo =()=>{
+    return(<img className='imgClass' alt='gamespot' src={gamespot}/>)
+}
+
+export const xboxLogo = ()=>{
+    return(<img className='imgClass' alt='xbox' src={xbox}/>)
+}
+
+export const nintendoLifeLogo = ()=>{
+    return(<img className='imgClass' alt='nintendolife' src={nintendoLife}/>)
+}
+
+export const indieGamesLogo = ()=>{
+    return(<img className='imgClass' alt='indiegames' src={indieGames} />)
+}
+
+export const ignLogo = ()=>{
+    return(<img className='imgClass' alt='ign' src={ign} />)
+}
+
+export const gameInformerLogo = ()=>{
+    return(<img className='imgClass' alt='gameinformer' src={gameInformer} />)
+}
+
+export const arsLogo =()=>{
+    return(<img className='imgClass' alt='ars' src={ars} />)
+}
+
+export const polygonLogo=()=>{
+    return(<img className='imgClass' alt='polygon' src={polygon} />)
+}
+
+export const redditGamesLogo=()=>{
+    return(<img className='imgClass' alt='redditgames' src={redditGaming} />)
+} 
+
+export const rockPaperShotgunLogo = ()=>{
+    return(<img className='imgClass' alt='rockpapershotgun' src={rockPaperShotgun} />)
+}
+
+export const pcGamesNLogo = ()=>{
+    return(<img className='imgClass' alt='pcgamesn' src={pcGamesN} />)
 }
 
 export const BBC = ()=>{
