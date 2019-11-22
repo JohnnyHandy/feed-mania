@@ -14,6 +14,20 @@ import wired from './wired.svg'
 import pcWorld from './PCWorld.svg'
 import techWorld from './techworld.svg'
 import lifeHacker from './lifehacker.svg'
+import readWrite from './readwrite.svg'
+import gizmodo from './Gizmodo.svg'
+import technologyReview from './technologyreview.svg'
+import howtogeek from './howtogeek.svg'
+import atlanticBusiness from './atlanticbusiness.svg'
+import entrepreneur from './entrepreneur.svg'
+import harvardBusiness from './harvardbusiness.svg'
+import freakonomics from './freakonomics.png'
+import theBigPicture from './thebigpicture.svg'
+import theEconomist from './theeconomist.svg'
+import cnnMoney from './cnnmoney.svg'
+import huffpostBusiness from './huffpostbusiness.svg'
+import fortune from './fortune.svg'
+import financialTimes from './financialtimes.svg'
 import fox from './fox-news.svg'
 import nytimes from './new-york-times.svg'
 import reuters from './reuters-2-1.svg'
@@ -61,6 +75,60 @@ export const techWorldLogo =()=>{
 export const lifeHackerLogo =()=>{
     return(<img className='imgClass' alt='lifehacker' src={lifeHacker}/>)
 }
+export const readWriteLogo =()=>{
+    return(<img className='imgClass' alt='readwrite' scr={readWrite}/>)
+}
+export const gizmodoLogo=()=>{
+    return(<img className='imgClass' alt='gizmodo' src={gizmodo}/>)
+}
+export const technologyReviewLogo=()=>{
+    return(<img className='imgClass' alt='technologyreview' src={technologyReview}/>)
+}
+export const howToGeekLogo = ()=>{
+    return(<img className='imgClass' alt='howtogeek' src={howtogeek} />)
+}
+
+//Business
+export const atlanticBusinessLogo =()=>{
+    return(<img className='imgClass' alt='howtogeek' src={atlanticBusiness}/>)
+}
+
+export const entrepreneurLogo = ()=>{
+    return(<img className='imgClass' alt='entrepreneur' src={entrepreneur}/>)
+}
+
+export const harvardBusinessLogo = ()=>{
+    return(<img className='imgClass' alt='havardbusiness' src={harvardBusiness}/>)
+}
+
+export const freakonomicsLogo = ()=>{
+    return(<img className='imgClass' alt='freakonomics' src={freakonomics} />)
+}
+
+export const theBigPictureLogo = ()=>{
+    return(<img className='imgClass' alt='thebigpicture' src={theBigPicture} />)
+}
+
+export const theEconomistLogo = ()=>{
+    return(<img className='imgClass' alt='theeconomist' src={theEconomist}/>)
+}
+
+export const cnnMoneyLogo = ()=>{
+    return(<img className='imgClass' alt='cnnmoney' src={cnnMoney}/>)
+}
+
+export const huffpostBusinessLogo = ()=>{
+    return(<img className='imgClass' alt='huffpostbusiness' src={huffpostBusiness}/>)
+}
+
+export const fortuneLogo = ()=>{
+    return(<img className='imgClass' alt='fortune' src={fortune}/>)
+}
+
+export const financialTimesLogo = ()=>{
+    return(<img className='imgClass' alt='financialTimes' src={financialTimes} />)
+}
+
 export const BBC = ()=>{
     return(<img className='imgClass' src={bbc} alt='bbc'/>)
 }
