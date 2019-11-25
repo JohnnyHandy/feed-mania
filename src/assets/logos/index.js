@@ -81,7 +81,7 @@ export const FoxSportsLogo = ()=>{
     return(<img className='imgClass' alt='fox-sports' src={foxSports}/>)
 }
 export const FifaLogo =()=>{
-    return(<img className='imgClass' alt='fifa' scr={fifa}/>)
+    return(<img className='imgClass' alt='fifa' src={fifa}/>)
 }
 export const ESPN = ()=>{
     return(<img className='imgClass' src={espn} alt ='espn'/>)

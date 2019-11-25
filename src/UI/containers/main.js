@@ -58,7 +58,7 @@ return <div className='main-navbar' >
         </NavLink>
     </div>:
     null}
-    {(props.active === 'initial'||props.active ==='business' ) ?
+    {(props.active === 'initial'||props.active ==='health' ) ?
     <div className='main-item-container'>
         <NavLink className='main-item' to='/health'>
             <i className="fas fa-heartbeat item-icon"></i>
