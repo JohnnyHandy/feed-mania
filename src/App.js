@@ -19,7 +19,7 @@ const RSSParser = require('rss-parser');
 class App extends Component {
  getWiredFeed(){
    const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-    axios.get(CORS_PROXY+'http://feeds.feedburner.com/TheBigPicture')
+    axios.get(CORS_PROXY+'http://feeds.washingtonpost.com/rss/rss_to-your-health')
     .then((res) => {
       let parser = new RSSParser();
       parser.parseString(res.data, (err, feed)=> {

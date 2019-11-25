@@ -57,6 +57,7 @@
         display:flex;
         font-size:2.2rem;
         justify-content: space-around;
+        text-decoration: none;
         width:100%;
     }
 
@@ -74,6 +75,9 @@
         flex-wrap: wrap;
         width:100%;
         justify-content: center;
+    }
+    .container .main-navbar .choice-container .choice-container-item{
+        width:15%
     }
 
 }

@@ -87,15 +87,15 @@ export const GAME_INFORMER={url:'http://www.gameinformer.com/feeds/thefeedrss.as
 export const ARS = {url:'https://feed2json.org/convert?url=http%3A%2F%2Ffeeds.arstechnica.com%2Farstechnica%2Fgaming%2F',method:'10',parser:'1'} //XMLHTTP TITLE AND SUMMARY
 export const POLYGON = {url:'https://www.polygon.com/rss/index.xml',method:'7',parser:'0',fix:'1'} //RSS-FEED TITLE CONTENTSNIPPET AND CONTENT WITH HTML
 export const REDDIT_GAMES={url:'https://www.reddit.com/r/gamers/.rss',method:'7',parser:'0',fix:'2'} //RSS-FEED TITLE AND CONTENT WITH HTML
-export const ROCKPAPERSHOTGUN='https://www.rockpapershotgun.com/feed' //RSS-FEED TITLE AND CONTENTSNIPPET, CONTENT:ENCODED
-export const PCGAMESN='https://www.pcgamesn.com/rss' //RSS-PARSER TITLE AND CONTENTSNIPET
+export const ROCKPAPERSHOTGUN={url:'https://www.rockpapershotgun.com/feed', method:'7',parser:'0'} //RSS-FEED TITLE AND CONTENTSNIPPET, CONTENT:ENCODED
+export const PCGAMESN={url:'https://www.pcgamesn.com/rss',method:'0', parser:'0'} //RSS-PARSER TITLE AND CONTENTSNIPET
 
 //HEALTH
 
-export const BBC_HEALTH = 'http://feeds.bbci.co.uk/news/health/rss.xml' //RSS-PARSER TITLE AND CONTENT SNIPPET
-export const WEBMD='http://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC' //RSS-PARSER TITLE AND CONTENT SNIPPET, CONTENT:ENCODED
-export const HARVARD_HEALTH='http://www.health.harvard.edu/blog/feed' //rss-parser title contentsnippet content encoded
-export const MYFITNESSPAL = 'http://blog.myfitnesspal.com/feed' //RSS-PARSER title contentsnippet enclosure
-export const PSYCHCENTRAL ='http://psychcentral.com/blog/feed/atom' //RSS-PARSER TITLE CONTENTSNIPPET
-export const NY_TIMES_HEALTH='https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/section/health/rss.xml' //RSS-PARSER TITLE CONTENTSNIPPET
-export const WP_HEALTH = 'http://feeds.washingtonpost.com/rss/rss_to-your-health' //RSS-PARSER TITLE CONTENTSNIPPET
+export const BBC_HEALTH = {url:'http://feeds.bbci.co.uk/news/health/rss.xml',method:'0',parser:'0'} //RSS-PARSER TITLE AND CONTENT SNIPPET
+export const WEBMD={url:'http://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC',method:'7',parser:'0'} //RSS-PARSER TITLE AND CONTENT SNIPPET, CONTENT:ENCODED
+export const HARVARD_HEALTH={url:'http://www.health.harvard.edu/blog/feed',method:'7',parser:'0'} //rss-parser title contentsnippet content encoded
+export const MYFITNESSPAL = {url:'http://blog.myfitnesspal.com/feed',method:'7',parser:'0'} //RSS-PARSER title contentsnippet enclosure
+export const PSYCHCENTRAL ={url:'http://psychcentral.com/blog/feed/atom',method:'7',parser:'0'} //RSS-PARSER TITLE CONTENTSNIPPET
+export const NY_TIMES_HEALTH={url:'https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/section/health/rss.xml',method:'0',parser:'0'} //RSS-PARSER TITLE CONTENTSNIPPET
+export const WP_HEALTH = {url:'http://feeds.washingtonpost.com/rss/rss_to-your-health',method:'0',parser:'0'} //RSS-PARSER TITLE CONTENTSNIPPET

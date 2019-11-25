@@ -1,14 +1,12 @@
-import React, {useState} from 'react'
-import {Route,NavLink,useParams,Switch} from 'react-router-dom'
+import React from 'react'
+import {Route,useParams,Switch} from 'react-router-dom'
 
-import ChoiceContainer from '../containers/choice'
 import MainContainer from '../containers/main'
 
 import './layout.css'
 
 const Layout = (props) => {
 
-    const [activeItem,setActiveItem] = useState('')
     let { slug } = useParams()
     console.log(slug)
     return(

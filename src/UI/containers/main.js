@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink,useParams} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import ChoiceContainer from '../containers/choice'
 
 const Main = (props)=>{  

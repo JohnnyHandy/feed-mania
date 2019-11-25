@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 import './index.css'
 import bbc from './BBC_News_2019.svg'
@@ -63,224 +64,224 @@ import yahoo from './yahoo-icon.svg'
 
 //Sports
 export const BbcSportsLogo=()=>{
-    return(<img className='imgClass' alt='bbc-sports' src={bbcSports}/>)
+    return(<NavLink to='/sports/bbc-sports' className='choice-container-item'><img className='imgClass' alt='bbc-sports' src={bbcSports}/></NavLink>)
 }
 export const CbsSportsLogo=()=>{
-    return(<img className='imgClass' alt='cbs-sports' src={cbsSports}/>)
+    return(<NavLink to='/sports/cbs-sports' className='choice-container-item'><img className='imgClass' alt='cbs-sports' src={cbsSports}/></NavLink>)
 }
 export const SportingNewsLogo=()=>{
-    return(<img className='imgClass' alt='sporting-news' src={sportingNews}/>)
+    return(<NavLink to='/sports/sporting-news' className='choice-container-item'><img className='imgClass' alt='sporting-news' src={sportingNews}/></NavLink>)
 }
 export const NflLogo=()=>{
-    return(<img className='imgClass' alt='nflLogo' src={nfl}/>)
+    return(<NavLink to='/sports/nfl' className='choice-container-item'><img className='imgClass' alt='nflLogo' src={nfl}/></NavLink>)
 }
 export const HoopDoctorsLogo=()=>{
-    return(<img className='imgClass' alt='hoop-doctors' src={hoopDoctors}/>)
+    return(<NavLink to='/sports/hoopdoctors' className='choice-container-item'><img className='imgClass' alt='hoop-doctors' src={hoopDoctors}/></NavLink>)
 }
 export const FoxSportsLogo = ()=>{
-    return(<img className='imgClass' alt='fox-sports' src={foxSports}/>)
+    return(<NavLink to='/sports/fox-sports' className='choice-container-item'><img className='imgClass' alt='fox-sports' src={foxSports}/></NavLink>)
 }
 export const FifaLogo =()=>{
-    return(<img className='imgClass' alt='fifa' src={fifa}/>)
+    return(<NavLink to='/sports/fifa' className='choice-container-item'><img className='imgClass' alt='fifa' src={fifa}/></NavLink>)
 }
 export const ESPN = ()=>{
-    return(<img className='imgClass' src={espn} alt ='espn'/>)
+    return(<NavLink to='/sports/espn' className='choice-container-item'><img className='imgClass' src={espn} alt ='espn'/></NavLink>)
 }
 //Technology
 export const WiredLogo = ()=>{
-    return(<img className='imgClass' alt='wired' src={wired}/>)
+    return(<NavLink to='/technology/wired' className='choice-container-item'><img className='imgClass' alt='wired' src={wired}/></NavLink>)
 }
 export const PcWorldLogo = ()=>{
-    return(<img className='imgClass' alt='PCWorld' src={pcWorld}/>)
+    return(<NavLink to='/technology/pcworld' className='choice-container-item'><img className='imgClass' alt='PCWorld' src={pcWorld}/></NavLink>)
 }
 export const TechWorldLogo =()=>{
-    return(<img className='imgClass' alt='techWorld' src={techWorld} />)
+    return(<NavLink to='/technology/techworld' className='choice-container-item'><img className='imgClass' alt='techWorld' src={techWorld}/></NavLink>)
 }
 export const LifeHackerLogo =()=>{
-    return(<img className='imgClass' alt='lifehacker' src={lifeHacker}/>)
+    return(<NavLink to='/technology/lifehacker' className='choice-container-item'><img className='imgClass' alt='lifehacker' src={lifeHacker}/></NavLink>)
 }
 export const ReadWriteLogo =()=>{
-    return(<img className='imgClass' alt='readwrite' scr={readWrite}/>)
+    return(<NavLink to='/technology/readwrite' className='choice-container-item'><img className='imgClass' alt='readwrite' src={readWrite}/></NavLink>)
 }
 export const GizmodoLogo=()=>{
-    return(<img className='imgClass' alt='gizmodo' src={gizmodo}/>)
+    return(<NavLink to='/technology/gizmodo' className='choice-container-item'><img className='imgClass' alt='gizmodo' src={gizmodo}/></NavLink>)
 }
 export const TechnologyReviewLogo=()=>{
-    return(<img className='imgClass' alt='technologyreview' src={technologyReview}/>)
+    return(<NavLink to='/technology/technology-review' className='choice-container-item'><img className='imgClass' alt='technologyreview' src={technologyReview}/></NavLink>)
 }
 export const HowToGeekLogo = ()=>{
-    return(<img className='imgClass' alt='howtogeek' src={howtogeek} />)
+    return(<NavLink to='/technology/howtogeek' className='choice-container-item'><img className='imgClass' alt='howtogeek' src={howtogeek} /></NavLink>)
 }
 
 //Business
 export const AtlanticBusinessLogo =()=>{
-    return(<img className='imgClass' alt='howtogeek' src={atlanticBusiness}/>)
+    return(<NavLink to='/business/howtogeek' className='choice-container-item'><img className='imgClass' alt='howtogeek' src={atlanticBusiness}/></NavLink>)
 }
 
 export const EntrepreneurLogo = ()=>{
-    return(<img className='imgClass' alt='entrepreneur' src={entrepreneur}/>)
+    return(<NavLink to='/business/entrepreneur' className='choice-container-item'><img className='imgClass' alt='entrepreneur' src={entrepreneur}/></NavLink>)
 }
 
 export const HarvardBusinessLogo = ()=>{
-    return(<img className='imgClass' alt='havardbusiness' src={harvardBusiness}/>)
+    return(<NavLink to='/business/harvard-business' className='choice-container-item'><img className='imgClass' alt='harvardbusiness' src={harvardBusiness}/></NavLink>)
 }
 
 export const FreakonomicsLogo = ()=>{
-    return(<img className='imgClass' alt='freakonomics' src={freakonomics} />)
+    return(<NavLink to='/business/freakonomics' className='choice-container-item'><img className='imgClass' alt='freakonomics' src={freakonomics} /></NavLink>)
 }
 
 export const TheBigPictureLogo = ()=>{
-    return(<img className='imgClass' alt='thebigpicture' src={theBigPicture} />)
+    return(<NavLink to='/business/thebigpicture' className='choice-container-item'><img className='imgClass' alt='thebigpicture' src={theBigPicture} /></NavLink>)
 }
 
 export const TheEconomistLogo = ()=>{
-    return(<img className='imgClass' alt='theeconomist' src={theEconomist}/>)
+    return(<NavLink to='/business/the-economist' className='choice-container-item'><img className='imgClass' alt='theeconomist' src={theEconomist}/></NavLink>)
 }
 
 export const CnnMoneyLogo = ()=>{
-    return(<img className='imgClass' alt='cnnmoney' src={cnnMoney}/>)
+    return(<NavLink to='/business/cnn-money' className='choice-container-item'><img className='imgClass' alt='cnnmoney' src={cnnMoney}/></NavLink>)
 }
 
 export const HuffpostBusinessLogo = ()=>{
-    return(<img className='imgClass' alt='huffpostbusiness' src={huffpostBusiness}/>)
+    return(<NavLink to='/business/huffpost-business' className='choice-container-item'><img className='imgClass' alt='huffpostbusiness' src={huffpostBusiness}/></NavLink>)
 }
 
 export const FortuneLogo = ()=>{
-    return(<img className='imgClass' alt='fortune' src={fortune}/>)
+    return(<NavLink to='/business/fortune' className='choice-container-item'><img className='imgClass' alt='fortune' src={fortune}/></NavLink>)
 }
 
 export const FinancialTimesLogo = ()=>{
-    return(<img className='imgClass' alt='financialTimes' src={financialTimes} />)
+    return(<NavLink to='/business/financial-times' className='choice-container-item'><img className='imgClass' alt='financialTimes' src={financialTimes} /></NavLink>)
 }
 
 //Politics
 export const ThinkProgressLogo = ()=>{
-    return(<img className='imgClass' alt='thinkprogress' src={thinkProgress}/>)
+    return(<NavLink to='/politics/think-progress' className='choice-container-item'><img className='imgClass' alt='thinkprogress' src={thinkProgress}/></NavLink>)
 }
 
 export const PoliticalInsiderLogo = ()=>{
-    return(<img className='imgClass' alt='politicalinsider' src={politicalInsider} />)
+    return(<NavLink to='/politics/political-insider' className='choice-container-item'><img className='imgClass' alt='politicalinsider' src={politicalInsider} /></NavLink>)
 }
 
 export const FoxNewsPoliticsLogo = ()=>{
-    return(<img className='imgClass' alt='foxnewspolitics' src={foxNewsPolitics}/>)
+    return(<NavLink to='/politics/fox-news-politics' className='choice-container-item'><img className='imgClass' alt='foxnewspolitics' src={foxNewsPolitics}/></NavLink>)
 }
 
 export const CnnPoliticsLogo = ()=>{
-    return(<img className='imgClass' alt='cnnpolitics' src={cnnPolitics}/>)
+    return(<NavLink to='/politics/cnn-politics' className='choice-container-item'><img className='imgClass' alt='cnnpolitics' src={cnnPolitics}/></NavLink>)
 }
 
 export const ReutersPoliticsLogo = ()=>{
-    return(<img className='imgClass' alt='reuterspolitics' src={reutersPolitics}/>)
+    return(<NavLink to='/politics/reuters-politics' className='choice-container-item'><img className='imgClass' alt='reuterspolitics' src={reutersPolitics}/></NavLink>)
 }
 
 export const SlateLogo = ()=>{
-    return(<img className='imgClass' alt='slate' src={slate}/>)
+    return(<NavLink to='/politics/slate' className='choice-container-item'><img className='imgClass' alt='slate' src={slate}/></NavLink>)
 }
 
 export const TheNationLogo = ()=>{
-    return(<img className='imgClass' alt='thenation' src={theNation}/>)
+    return(<NavLink to='/politics/the-nation' className='choice-container-item'><img className='imgClass' alt='thenation' src={theNation}/></NavLink>)
 }
 
 export const MsnbcLogo = ()=>{
-    return(<img className='imgClass' alt='msnbc' src={msnbc} />)
+    return(<NavLink to='/politics/msnbc' className='choice-container-item'><img className='imgClass' alt='msnbc' src={msnbc} /></NavLink>)
 }
 
 //Gaming
 export const GameSpotLogo =()=>{
-    return(<img className='imgClass' alt='gamespot' src={gamespot}/>)
+    return(<NavLink to='/gaming/gamespot' className='choice-container-item'><img className='imgClass' alt='gamespot' src={gamespot}/></NavLink>)
 }
 
 export const XboxLogo = ()=>{
-    return(<img className='imgClass' alt='xbox' src={xbox}/>)
+    return(<NavLink to='/gaming/xbox' className='choice-container-item'><img className='imgClass' alt='xbox' src={xbox}/></NavLink>)
 }
 
 export const NintendoLifeLogo = ()=>{
-    return(<img className='imgClass' alt='nintendolife' src={nintendoLife}/>)
+    return(<NavLink to='/gaming/nintendo-life'><img className='imgClass' alt='nintendolife' src={nintendoLife}/></NavLink>)
 }
 
 export const IndieGamesLogo = ()=>{
-    return(<img className='imgClass' alt='indiegames' src={indieGames} />)
+    return(<NavLink to='/gaming/indie-games' className='choice-container-item'><img className='imgClass' alt='indiegames' src={indieGames} /></NavLink>)
 }
 
 export const IgnLogo = ()=>{
-    return(<img className='imgClass' alt='ign' src={ign} />)
+    return(<NavLink to='/gaming/ign' className='choice-container-item'><img className='imgClass' alt='ign' src={ign} /></NavLink>)
 }
 
 export const GameInformerLogo = ()=>{
-    return(<img className='imgClass' alt='gameinformer' src={gameInformer} />)
+    return(<NavLink to='/gaming/game-informer' className='choice-container-item'><img className='imgClass' alt='gameinformer' src={gameInformer} /></NavLink>)
 }
 
 export const ArsLogo =()=>{
-    return(<img className='imgClass' alt='ars' src={ars} />)
+    return(<NavLink to='/gaming/ars' className='choice-container-item'><img className='imgClass' alt='ars' src={ars} /></NavLink>)
 }
 
 export const PolygonLogo=()=>{
-    return(<img className='imgClass' alt='polygon' src={polygon} />)
+    return(<NavLink to='/gaming/polygon' className='choice-container-item'><img className='imgClass' alt='polygon' src={polygon} /></NavLink>)
 }
 
 export const RedditGamesLogo=()=>{
-    return(<img className='imgClass' alt='redditgames' src={redditGaming} />)
+    return(<NavLink to='/gaming/reddit-games' className='choice-container-item'><img className='imgClass' alt='redditgames' src={redditGaming} /></NavLink>)
 } 
 
 export const RockPaperShotgunLogo = ()=>{
-    return(<img className='imgClass' alt='rockpapershotgun' src={rockPaperShotgun} />)
+    return(<NavLink to='/gaming/rock-paper-shotgun' className='choice-container-item'><img className='imgClass' alt='rockpapershotgun' src={rockPaperShotgun} /></NavLink>)
 }
 
 export const PcGamesNLogo = ()=>{
-    return(<img className='imgClass' alt='pcgamesn' src={pcGamesN} />)
+    return(<NavLink to='/gaming/pcgamesn' className='choice-container-item'><img className='imgClass' alt='pcgamesn' src={pcGamesN} /></NavLink>)
 }
 
 //Health
 
 export const BbcHealthLogo = ()=>{
-    return(<img className='imgClass' alt='bbchealth' src={bbcHealth} />)
+    return(<NavLink to='/health/bbc-health' className='choice-container-item'><img className='imgClass' alt='bbchealth' src={bbcHealth} /></NavLink>)
 }
 
 export const WebmdLogo = ()=>{
-    return(<img className='imgClass' alt='webmd' src={webmd} />)
+    return(<NavLink to='/health/webmd' className='choice-container-item'><img className='imgClass' alt='webmd' src={webmd} /></NavLink>)
 }
 
 export const HarvardHealthLogo = ()=>{
-    return(<img className='imgClass' alt='harvardhealth' src={harvardHealth} />)
+    return(<NavLink to='/health/harvard-health' className='choice-container-item'><img className='imgClass' alt='harvardhealth' src={harvardHealth} /></NavLink>)
 }
 
 export const MyFitnessPalLogo = ()=>{
-    return(<img className='imgClass' alt='myfitnesspal' src={myfitnesspal} />)
+    return(<NavLink to='/health/myfitnesspal' className='choice-container-item'><img className='imgClass' alt='myfitnesspal' src={myfitnesspal} /></NavLink>)
 }
 
 export const PsychCentralLogo = ()=>{
-    return(<img className='imgClass' alt='psychcentral' src={psychCentral} />)
+    return(<NavLink to='/health/psychcentral' className='choice-container-item'><img className='imgClass' alt='psychcentral' src={psychCentral} /></NavLink>)
 }
  
 //World
 
 export const BuzzFeedWorldLogo = ()=>{
-    return(<img className='imgClass' alt='buzzfeed' src={buzzFeedWorld} />)
+    return(<NavLink to='/world/buzzfeed' className='choice-container-item'><img className='imgClass' alt='buzzfeed' src={buzzFeedWorld} /></NavLink>)
 }
  
 export const BBC = ()=>{
-    return(<img className='imgClass' src={bbc} alt='bbc'/>)
+    return(<NavLink to='/world/bbc' className='choice-container-item'><img className='imgClass' src={bbc} alt='bbc'/></NavLink>)
 }
 export const FOX = ()=>{
-    return(<img className='imgClass' src={fox} alt='fox-'/>)
+    return(<NavLink to='/world/fox' className='choice-container-item'><img className='imgClass' src={fox} alt='fox'/></NavLink>)
 }
 export const NYTIMES =()=>{
-    return(<img className='imgClass' src={nytimes} alt='nytimes'/>)
+    return(<NavLink to='/world/nytimes' className='choice-container-item'><img className='imgClass' src={nytimes} alt='nytimes'/></NavLink>)
 }
 export const REUTERS =()=>{
-    return(<img className='imgClass' src={reuters} alt='reuters'/>)
+    return(<NavLink to='/world/reuters' className='choice-container-item'><img className='imgClass' src={reuters} alt='reuters'/></NavLink>)
 }
 export const WALLSTREET =()=>{
-    return(<img className='imgClass' src={wallstreet} alt='wallstreet'/>)
+    return(<NavLink to='/world/wallstreet' className='choice-container-item'><img className='imgClass' src={wallstreet} alt='wallstreet'/></NavLink>)
 }
 export const CNN = ()=>{
-    return(<img className='imgClass' src={cnn} alt='cnn'/>)
+    return(<NavLink to='/world/cnn' className='choice-container-item'><img className='imgClass' src={cnn} alt='cnn'/></NavLink>)
 }
 export const ABC = ()=>{
-    return(<img className='imgClass' src={abc} alt='abc'/>)
+    return(<NavLink to='/world/abc' className='choice-container-item'><img className='imgClass' src={abc} alt='abc'/></NavLink>)
 }
 export const YAHOO = ()=>{
-    return(<img className='imgClass' src={yahoo} alt='yahoo'/>)
+    return(<NavLink to='/world/yahoo' className='choice-container-item'><img className='imgClass' src={yahoo} alt='yahoo'/></NavLink>)
 }
 
