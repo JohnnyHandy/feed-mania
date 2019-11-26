@@ -31,11 +31,6 @@ const content = (props)=>{
         <div>
         {itemElement}
         </div>
-        
-            // <Card className='content'>
-            //     <CardTitle>Titulo</CardTitle>
-            //     <CardText>Texto</CardText>
-            // </Card>
     )
 }
 

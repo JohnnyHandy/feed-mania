@@ -61,227 +61,464 @@ import wallstreet from './wsj_logo_short.svg'
 import cnn from './cnn-1.svg'
 import abc from './abc-broadcast.svg'
 import yahoo from './yahoo-icon.svg'
+import washingtonPost from './washingtonpost.svg'
+
+
 
 //Sports
-export const BbcSportsLogo=()=>{
-    return(<NavLink to='/sports/bbc-sports' className='choice-container-item'><img className='imgClass' alt='bbc-sports' src={bbcSports}/></NavLink>)
+export const BbcSportsLogo=(props)=>{
+    return(
+    <NavLink to='/sports/bbc-sports' className='choice-container-item'>
+        <img className='imgClass' alt='bbc-sports' src={bbcSports} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const CbsSportsLogo=()=>{
-    return(<NavLink to='/sports/cbs-sports' className='choice-container-item'><img className='imgClass' alt='cbs-sports' src={cbsSports}/></NavLink>)
+export const CbsSportsLogo=(props)=>{
+    return(
+    <NavLink to='/sports/cbs-sports' className='choice-container-item'>
+        <img className='imgClass' alt='cbs-sports' src={cbsSports} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const SportingNewsLogo=()=>{
-    return(<NavLink to='/sports/sporting-news' className='choice-container-item'><img className='imgClass' alt='sporting-news' src={sportingNews}/></NavLink>)
+export const SportingNewsLogo=(props)=>{
+    return(
+    <NavLink to='/sports/sporting-news' className='choice-container-item'>
+        <img className='imgClass' alt='sporting-news' src={sportingNews} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const NflLogo=()=>{
-    return(<NavLink to='/sports/nfl' className='choice-container-item'><img className='imgClass' alt='nflLogo' src={nfl}/></NavLink>)
+export const NflLogo=(props)=>{
+    return(
+    <NavLink to='/sports/nfl' className='choice-container-item'>
+        <img className='imgClass' alt='nflLogo' src={nfl} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const HoopDoctorsLogo=()=>{
-    return(<NavLink to='/sports/hoopdoctors' className='choice-container-item'><img className='imgClass' alt='hoop-doctors' src={hoopDoctors}/></NavLink>)
+export const HoopDoctorsLogo=(props)=>{
+    return(
+    <NavLink to='/sports/hoopdoctors' className='choice-container-item'>
+        <img className='imgClass' alt='hoop-doctors' src={hoopDoctors} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>)
 }
-export const FoxSportsLogo = ()=>{
-    return(<NavLink to='/sports/fox-sports' className='choice-container-item'><img className='imgClass' alt='fox-sports' src={foxSports}/></NavLink>)
+export const FoxSportsLogo = (props)=>{
+    return(
+    <NavLink to='/sports/fox-sports' className='choice-container-item'>
+        <img className='imgClass' alt='fox-sports' src={foxSports} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const FifaLogo =()=>{
-    return(<NavLink to='/sports/fifa' className='choice-container-item'><img className='imgClass' alt='fifa' src={fifa}/></NavLink>)
+export const FifaLogo =(props)=>{
+    return(
+    <NavLink to='/sports/fifa' className='choice-container-item'>
+        <img className='imgClass' alt='fifa' src={fifa} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>)
 }
-export const ESPN = ()=>{
-    return(<NavLink to='/sports/espn' className='choice-container-item'><img className='imgClass' src={espn} alt ='espn'/></NavLink>)
+export const ESPN = (props)=>{
+    return(
+    <NavLink to='/sports/espn' className='choice-container-item'>
+        <img className='imgClass' src={espn} alt ='espn' onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 //Technology
-export const WiredLogo = ()=>{
-    return(<NavLink to='/technology/wired' className='choice-container-item'><img className='imgClass' alt='wired' src={wired}/></NavLink>)
+export const WiredLogo = (props)=>{
+    return(
+    <NavLink to='/technology/wired' className='choice-container-item'>
+        <img className='imgClass' alt='wired' src={wired} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const PcWorldLogo = ()=>{
-    return(<NavLink to='/technology/pcworld' className='choice-container-item'><img className='imgClass' alt='PCWorld' src={pcWorld}/></NavLink>)
+export const PcWorldLogo = (props)=>{
+    return(
+    <NavLink to='/technology/pcworld' className='choice-container-item'>
+        <img className='imgClass' alt='PCWorld' src={pcWorld} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const TechWorldLogo =()=>{
-    return(<NavLink to='/technology/techworld' className='choice-container-item'><img className='imgClass' alt='techWorld' src={techWorld}/></NavLink>)
+export const TechWorldLogo =(props)=>{
+    return(
+    <NavLink to='/technology/techworld' className='choice-container-item'>
+        <img className='imgClass' alt='techWorld' src={techWorld} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const LifeHackerLogo =()=>{
-    return(<NavLink to='/technology/lifehacker' className='choice-container-item'><img className='imgClass' alt='lifehacker' src={lifeHacker}/></NavLink>)
+export const LifeHackerLogo =(props)=>{
+    return(
+    <NavLink to='/technology/lifehacker' className='choice-container-item'>
+        <img className='imgClass' alt='lifehacker' src={lifeHacker} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const ReadWriteLogo =()=>{
-    return(<NavLink to='/technology/readwrite' className='choice-container-item'><img className='imgClass' alt='readwrite' src={readWrite}/></NavLink>)
+export const ReadWriteLogo =(props)=>{
+    return(
+    <NavLink to='/technology/readwrite' className='choice-container-item'>
+        <img className='imgClass' alt='readwrite' src={readWrite} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const GizmodoLogo=()=>{
-    return(<NavLink to='/technology/gizmodo' className='choice-container-item'><img className='imgClass' alt='gizmodo' src={gizmodo}/></NavLink>)
+export const GizmodoLogo=(props)=>{
+    return(
+    <NavLink to='/technology/gizmodo' className='choice-container-item'>
+        <img className='imgClass' alt='gizmodo' src={gizmodo} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const TechnologyReviewLogo=()=>{
-    return(<NavLink to='/technology/technology-review' className='choice-container-item'><img className='imgClass' alt='technologyreview' src={technologyReview}/></NavLink>)
+export const TechnologyReviewLogo=(props)=>{
+    return(
+    <NavLink to='/technology/technology-review' className='choice-container-item'>
+        <img className='imgClass' alt='technologyreview' src={technologyReview} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>)
 }
-export const HowToGeekLogo = ()=>{
-    return(<NavLink to='/technology/howtogeek' className='choice-container-item'><img className='imgClass' alt='howtogeek' src={howtogeek} /></NavLink>)
+export const HowToGeekLogo = (props)=>{
+    return(
+    <NavLink to='/technology/howtogeek' className='choice-container-item'>
+        <img className='imgClass' alt='howtogeek' src={howtogeek} onClick={()=>props.fetchFeedInfo()} />
+    </NavLink>
+    )
 }
 
 //Business
-export const AtlanticBusinessLogo =()=>{
-    return(<NavLink to='/business/howtogeek' className='choice-container-item'><img className='imgClass' alt='howtogeek' src={atlanticBusiness}/></NavLink>)
+export const AtlanticBusinessLogo =(props)=>{
+    return(
+    <NavLink to='/business/howtogeek' className='choice-container-item'>
+        <img className='imgClass' alt='howtogeek' src={atlanticBusiness} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const EntrepreneurLogo = ()=>{
-    return(<NavLink to='/business/entrepreneur' className='choice-container-item'><img className='imgClass' alt='entrepreneur' src={entrepreneur}/></NavLink>)
+export const EntrepreneurLogo = (props)=>{
+    return(
+    <NavLink to='/business/entrepreneur' className='choice-container-item'>
+        <img className='imgClass' alt='entrepreneur' src={entrepreneur} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const HarvardBusinessLogo = ()=>{
-    return(<NavLink to='/business/harvard-business' className='choice-container-item'><img className='imgClass' alt='harvardbusiness' src={harvardBusiness}/></NavLink>)
+export const HarvardBusinessLogo = (props)=>{
+    return(
+    <NavLink to='/business/harvard-business' className='choice-container-item'>
+        <img className='imgClass' alt='harvardbusiness' src={harvardBusiness} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const FreakonomicsLogo = ()=>{
-    return(<NavLink to='/business/freakonomics' className='choice-container-item'><img className='imgClass' alt='freakonomics' src={freakonomics} /></NavLink>)
+export const FreakonomicsLogo = (props)=>{
+    return(
+    <NavLink to='/business/freakonomics' className='choice-container-item'>
+        <img className='imgClass' alt='freakonomics' src={freakonomics} onClick={()=>props.fetchFeedInfo()} />
+    </NavLink>
+    )
 }
 
-export const TheBigPictureLogo = ()=>{
-    return(<NavLink to='/business/thebigpicture' className='choice-container-item'><img className='imgClass' alt='thebigpicture' src={theBigPicture} /></NavLink>)
+export const TheBigPictureLogo = (props)=>{
+    return(
+    <NavLink to='/business/thebigpicture' className='choice-container-item'>
+        <img className='imgClass' alt='thebigpicture' src={theBigPicture} onClick={()=>props.fetchFeedInfo()} />
+    </NavLink>
+    )
 }
 
-export const TheEconomistLogo = ()=>{
-    return(<NavLink to='/business/the-economist' className='choice-container-item'><img className='imgClass' alt='theeconomist' src={theEconomist}/></NavLink>)
+export const TheEconomistLogo = (props)=>{
+    return(
+    <NavLink to='/business/the-economist' className='choice-container-item'>
+        <img className='imgClass' alt='theeconomist' src={theEconomist} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>)
 }
 
-export const CnnMoneyLogo = ()=>{
-    return(<NavLink to='/business/cnn-money' className='choice-container-item'><img className='imgClass' alt='cnnmoney' src={cnnMoney}/></NavLink>)
+export const CnnMoneyLogo = (props)=>{
+    return(
+    <NavLink to='/business/cnn-money' className='choice-container-item'>
+        <img className='imgClass' alt='cnnmoney' src={cnnMoney} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const HuffpostBusinessLogo = ()=>{
-    return(<NavLink to='/business/huffpost-business' className='choice-container-item'><img className='imgClass' alt='huffpostbusiness' src={huffpostBusiness}/></NavLink>)
+export const HuffpostBusinessLogo = (props)=>{
+    return(
+    <NavLink to='/business/huffpost-business' className='choice-container-item'>
+        <img className='imgClass' alt='huffpostbusiness' src={huffpostBusiness} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const FortuneLogo = ()=>{
-    return(<NavLink to='/business/fortune' className='choice-container-item'><img className='imgClass' alt='fortune' src={fortune}/></NavLink>)
+export const FortuneLogo = (props)=>{
+    return(
+    <NavLink to='/business/fortune' className='choice-container-item'>
+        <img className='imgClass' alt='fortune' src={fortune} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const FinancialTimesLogo = ()=>{
-    return(<NavLink to='/business/financial-times' className='choice-container-item'><img className='imgClass' alt='financialTimes' src={financialTimes} /></NavLink>)
+export const FinancialTimesLogo = (props)=>{
+    return(
+    <NavLink to='/business/financial-times' className='choice-container-item'>
+        <img className='imgClass' alt='financialTimes' src={financialTimes} onClick={()=>props.fetchFeedInfo()} />
+    </NavLink>
+    )
 }
 
 //Politics
-export const ThinkProgressLogo = ()=>{
-    return(<NavLink to='/politics/think-progress' className='choice-container-item'><img className='imgClass' alt='thinkprogress' src={thinkProgress}/></NavLink>)
+export const ThinkProgressLogo = (props)=>{
+    return(
+    <NavLink to='/politics/think-progress' className='choice-container-item'>
+        <img className='imgClass' alt='thinkprogress' src={thinkProgress} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const PoliticalInsiderLogo = ()=>{
-    return(<NavLink to='/politics/political-insider' className='choice-container-item'><img className='imgClass' alt='politicalinsider' src={politicalInsider} /></NavLink>)
+export const PoliticalInsiderLogo = (props)=>{
+    return(
+    <NavLink to='/politics/political-insider' className='choice-container-item'>
+        <img className='imgClass' alt='politicalinsider' src={politicalInsider} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const FoxNewsPoliticsLogo = ()=>{
-    return(<NavLink to='/politics/fox-news-politics' className='choice-container-item'><img className='imgClass' alt='foxnewspolitics' src={foxNewsPolitics}/></NavLink>)
+export const FoxNewsPoliticsLogo = (props)=>{
+    return(
+    <NavLink to='/politics/fox-news-politics' className='choice-container-item'>
+        <img className='imgClass' alt='foxnewspolitics' src={foxNewsPolitics} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const CnnPoliticsLogo = ()=>{
-    return(<NavLink to='/politics/cnn-politics' className='choice-container-item'><img className='imgClass' alt='cnnpolitics' src={cnnPolitics}/></NavLink>)
+export const CnnPoliticsLogo = (props)=>{
+    return(<NavLink to='/politics/cnn-politics' className='choice-container-item'>
+        <img className='imgClass' alt='cnnpolitics' src={cnnPolitics} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const ReutersPoliticsLogo = ()=>{
-    return(<NavLink to='/politics/reuters-politics' className='choice-container-item'><img className='imgClass' alt='reuterspolitics' src={reutersPolitics}/></NavLink>)
+export const ReutersPoliticsLogo = (props)=>{
+    return(
+    <NavLink to='/politics/reuters-politics' className='choice-container-item'>
+        <img className='imgClass' alt='reuterspolitics' src={reutersPolitics} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const SlateLogo = ()=>{
-    return(<NavLink to='/politics/slate' className='choice-container-item'><img className='imgClass' alt='slate' src={slate}/></NavLink>)
+export const SlateLogo = (props)=>{
+    return(
+    <NavLink to='/politics/slate' className='choice-container-item'>
+        <img className='imgClass' alt='slate' src={slate} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const TheNationLogo = ()=>{
-    return(<NavLink to='/politics/the-nation' className='choice-container-item'><img className='imgClass' alt='thenation' src={theNation}/></NavLink>)
+export const TheNationLogo = (props)=>{
+    return(
+    <NavLink to='/politics/the-nation' className='choice-container-item'>
+        <img className='imgClass' alt='thenation' src={theNation} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const MsnbcLogo = ()=>{
-    return(<NavLink to='/politics/msnbc' className='choice-container-item'><img className='imgClass' alt='msnbc' src={msnbc} /></NavLink>)
+export const MsnbcLogo = (props)=>{
+    return(
+    <NavLink to='/politics/msnbc' className='choice-container-item' >
+        <img className='imgClass' alt='msnbc' src={msnbc} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
 //Gaming
-export const GameSpotLogo =()=>{
-    return(<NavLink to='/gaming/gamespot' className='choice-container-item'><img className='imgClass' alt='gamespot' src={gamespot}/></NavLink>)
+export const GameSpotLogo =(props)=>{
+    return(
+    <NavLink to='/gaming/gamespot' className='choice-container-item'>
+        <img className='imgClass' alt='gamespot' src={gamespot} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const XboxLogo = ()=>{
-    return(<NavLink to='/gaming/xbox' className='choice-container-item'><img className='imgClass' alt='xbox' src={xbox}/></NavLink>)
+export const XboxLogo = (props)=>{
+    return(
+    <NavLink to='/gaming/xbox' className='choice-container-item'>
+        <img className='imgClass' alt='xbox' src={xbox} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>)
 }
 
-export const NintendoLifeLogo = ()=>{
-    return(<NavLink to='/gaming/nintendo-life'><img className='imgClass' alt='nintendolife' src={nintendoLife}/></NavLink>)
+export const NintendoLifeLogo = (props)=>{
+    return(
+    <NavLink to='/gaming/nintendo-life' className='choice-container-item'>
+        <img className='imgClass' alt='nintendolife' src={nintendoLife} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>)
 }
 
-export const IndieGamesLogo = ()=>{
-    return(<NavLink to='/gaming/indie-games' className='choice-container-item'><img className='imgClass' alt='indiegames' src={indieGames} /></NavLink>)
+export const IndieGamesLogo = (props)=>{
+    return(
+    <NavLink to='/gaming/indie-games' className='choice-container-item'>
+        <img className='imgClass' alt='indiegames' src={indieGames} onClick={()=>props.fetchFeedInfo()} />
+    </NavLink>)
 }
 
-export const IgnLogo = ()=>{
-    return(<NavLink to='/gaming/ign' className='choice-container-item'><img className='imgClass' alt='ign' src={ign} /></NavLink>)
+export const IgnLogo = (props)=>{
+    return(
+    <NavLink to='/gaming/ign' className='choice-container-item'>
+        <img className='imgClass' alt='ign' src={ign} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const GameInformerLogo = ()=>{
-    return(<NavLink to='/gaming/game-informer' className='choice-container-item'><img className='imgClass' alt='gameinformer' src={gameInformer} /></NavLink>)
+export const GameInformerLogo = (props)=>{
+    return(
+    <NavLink to='/gaming/game-informer' className='choice-container-item'>
+        <img className='imgClass' alt='gameinformer' src={gameInformer} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const ArsLogo =()=>{
-    return(<NavLink to='/gaming/ars' className='choice-container-item'><img className='imgClass' alt='ars' src={ars} /></NavLink>)
+export const ArsLogo =(props)=>{
+    return(
+    <NavLink to='/gaming/ars' className='choice-container-item'>
+        <img className='imgClass' alt='ars' src={ars} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const PolygonLogo=()=>{
-    return(<NavLink to='/gaming/polygon' className='choice-container-item'><img className='imgClass' alt='polygon' src={polygon} /></NavLink>)
+export const PolygonLogo=(props)=>{
+    return(
+    <NavLink to='/gaming/polygon' className='choice-container-item'>
+        <img className='imgClass' alt='polygon' src={polygon} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const RedditGamesLogo=()=>{
-    return(<NavLink to='/gaming/reddit-games' className='choice-container-item'><img className='imgClass' alt='redditgames' src={redditGaming} /></NavLink>)
+export const RedditGamesLogo=(props)=>{
+    return(
+    <NavLink to='/gaming/reddit-games' className='choice-container-item'>
+        <img className='imgClass' alt='redditgames' src={redditGaming} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 } 
 
-export const RockPaperShotgunLogo = ()=>{
-    return(<NavLink to='/gaming/rock-paper-shotgun' className='choice-container-item'><img className='imgClass' alt='rockpapershotgun' src={rockPaperShotgun} /></NavLink>)
+export const RockPaperShotgunLogo = (props)=>{
+    return(
+    <NavLink to='/gaming/rock-paper-shotgun' className='choice-container-item'>
+        <img className='imgClass' alt='rockpapershotgun' src={rockPaperShotgun} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const PcGamesNLogo = ()=>{
-    return(<NavLink to='/gaming/pcgamesn' className='choice-container-item'><img className='imgClass' alt='pcgamesn' src={pcGamesN} /></NavLink>)
+export const PcGamesNLogo = (props)=>{
+    return(
+    <NavLink to='/gaming/pcgamesn' className='choice-container-item'>
+        <img className='imgClass' alt='pcgamesn' src={pcGamesN} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>)
 }
 
 //Health
 
-export const BbcHealthLogo = ()=>{
-    return(<NavLink to='/health/bbc-health' className='choice-container-item'><img className='imgClass' alt='bbchealth' src={bbcHealth} /></NavLink>)
+export const BbcHealthLogo = (props)=>{
+    return(
+    <NavLink to='/health/bbc-health' className='choice-container-item'>
+        <img className='imgClass' alt='bbchealth' src={bbcHealth} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const WebmdLogo = ()=>{
-    return(<NavLink to='/health/webmd' className='choice-container-item'><img className='imgClass' alt='webmd' src={webmd} /></NavLink>)
+export const WebmdLogo = (props)=>{
+    return(
+    <NavLink to='/health/webmd' className='choice-container-item'>
+        <img className='imgClass' onClick={()=>props.fetchFeedInfo()} alt='webmd' src={webmd} />
+    </NavLink>
+    )
 }
 
-export const HarvardHealthLogo = ()=>{
-    return(<NavLink to='/health/harvard-health' className='choice-container-item'><img className='imgClass' alt='harvardhealth' src={harvardHealth} /></NavLink>)
+export const HarvardHealthLogo = (props)=>{
+    return(
+    <NavLink to='/health/harvard-health' className='choice-container-item'>
+        <img className='imgClass' alt='harvardhealth' src={harvardHealth} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 
-export const MyFitnessPalLogo = ()=>{
-    return(<NavLink to='/health/myfitnesspal' className='choice-container-item'><img className='imgClass' alt='myfitnesspal' src={myfitnesspal} /></NavLink>)
+export const MyFitnessPalLogo = (props)=>{
+    return(
+    <NavLink to='/health/myfitnesspal' className='choice-container-item'>
+        <img className='imgClass' alt='myfitnesspal' src={myfitnesspal}onClick={()=>props.fetchFeedInfo()} />
+    </NavLink>
+    )
 }
 
-export const PsychCentralLogo = ()=>{
-    return(<NavLink to='/health/psychcentral' className='choice-container-item'><img className='imgClass' alt='psychcentral' src={psychCentral} /></NavLink>)
+export const PsychCentralLogo = (props)=>{
+    return(
+    <NavLink to='/health/psychcentral' className='choice-container-item'>
+        <img className='imgClass' alt='psychcentral' src={psychCentral} onClick={()=>props.fetchFeedInfo()} />
+    </NavLink>
+    )
+}
+
+export const washingtonPostHealthLogo = (props)=>{
+    return(
+    <NavLink to='/health/psychcentral' className='choice-container-item'>
+        <img className='imgClass' alt='wphealth'src={washingtonPost} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
  
 //World
 
-export const BuzzFeedWorldLogo = ()=>{
-    return(<NavLink to='/world/buzzfeed' className='choice-container-item'><img className='imgClass' alt='buzzfeed' src={buzzFeedWorld} /></NavLink>)
+export const BuzzFeedWorldLogo = (props)=>{
+    return(
+    <NavLink to='/world/buzzfeed' className='choice-container-item'>
+        <img className='imgClass' alt='buzzfeed' src={buzzFeedWorld} onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>)
 }
  
-export const BBC = ()=>{
-    return(<NavLink to='/world/bbc' className='choice-container-item'><img className='imgClass' src={bbc} alt='bbc'/></NavLink>)
+export const BBC = (props)=>{
+    return(
+    <NavLink to='/world/bbc' className='choice-container-item'>
+        <img className='imgClass' src={bbc} alt='bbc' onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const FOX = ()=>{
-    return(<NavLink to='/world/fox' className='choice-container-item'><img className='imgClass' src={fox} alt='fox'/></NavLink>)
+export const FOX = (props)=>{
+    return(
+    <NavLink to='/world/fox' className='choice-container-item'>
+        <img className='imgClass' src={fox} alt='fox' onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const NYTIMES =()=>{
-    return(<NavLink to='/world/nytimes' className='choice-container-item'><img className='imgClass' src={nytimes} alt='nytimes'/></NavLink>)
+export const NYTIMES =(props)=>{
+    return(
+    <NavLink to='/world/nytimes' className='choice-container-item'>
+        <img className='imgClass' src={nytimes} alt='nytimes' onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const REUTERS =()=>{
-    return(<NavLink to='/world/reuters' className='choice-container-item'><img className='imgClass' src={reuters} alt='reuters'/></NavLink>)
+export const REUTERS =(props)=>{
+    return(
+    <NavLink to='/world/reuters' className='choice-container-item'>
+        <img className='imgClass' src={reuters} alt='reuters' onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const WALLSTREET =()=>{
-    return(<NavLink to='/world/wallstreet' className='choice-container-item'><img className='imgClass' src={wallstreet} alt='wallstreet'/></NavLink>)
+export const WALLSTREET =(props)=>{
+    return(
+    <NavLink to='/world/wallstreet' className='choice-container-item'>
+        <img className='imgClass' src={wallstreet} alt='wallstreet' onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const CNN = ()=>{
-    return(<NavLink to='/world/cnn' className='choice-container-item'><img className='imgClass' src={cnn} alt='cnn'/></NavLink>)
+export const CNN = (props)=>{
+    return(
+    <NavLink to='/world/cnn' className='choice-container-item'>
+        <img className='imgClass' src={cnn} alt='cnn' onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const ABC = ()=>{
-    return(<NavLink to='/world/abc' className='choice-container-item'><img className='imgClass' src={abc} alt='abc'/></NavLink>)
+export const ABC = (props)=>{
+    return(
+    <NavLink to='/world/abc' className='choice-container-item'>
+        <img className='imgClass' src={abc} alt='abc' onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
-export const YAHOO = ()=>{
-    return(<NavLink to='/world/yahoo' className='choice-container-item'><img className='imgClass' src={yahoo} alt='yahoo'/></NavLink>)
+export const YAHOO = (props)=>{
+    return(
+    <NavLink to='/world/yahoo' className='choice-container-item'>
+        <img className='imgClass' src={yahoo} alt='yahoo' onClick={()=>props.fetchFeedInfo()}/>
+    </NavLink>
+    )
 }
 

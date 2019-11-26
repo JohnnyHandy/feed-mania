@@ -80,7 +80,7 @@ export const MSNBC ={url:'https://feed2json.org/convert?url=http%3A%2F%2Fwww.msn
 //GAMING
 export const GAMESPOT = {url:'https://www.gamespot.com/feeds/mashup/',method:'0',parser:'0'}//RSS_PARSER (title and contentsnippet)
 export const XBOX = {url:'http://news.xbox.com/feed',method:'8',parser:'0'} //(RSS-PARSER) TITLE AND CONTENTSNIPPET 
-export const NITENDO = {url:'http://www.nintendolife.com/feeds/latest',method:'7',parser:'0'} //RSS-PARSER TITLE CONTENT CONTENTSNIPPET
+export const NINTENDO = {url:'http://www.nintendolife.com/feeds/latest',method:'7',parser:'0'} //RSS-PARSER TITLE CONTENT CONTENTSNIPPET
 export const INDIE_GAMES={url:'http://www.indiegames.com/atom.xml',method:'9',parser:'0'} //RSS-PARSER TITLE AND DESCRIPTION
 export const IGN = {url:'https://feed2json.org/convert?url=http%3A%2F%2Ffeeds.ign.com%2Fign%2Fgames-all', method:'10',parser:'1'}
 export const GAME_INFORMER={url:'http://www.gameinformer.com/feeds/thefeedrss.aspx',method:'7',parser:'0',fix:'1'}

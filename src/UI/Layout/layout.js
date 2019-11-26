@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route,useParams,Switch} from 'react-router-dom'
+import {Route,Switch} from 'react-router-dom'
 
 import MainContainer from '../containers/main'
 
@@ -7,8 +7,6 @@ import './layout.css'
 
 const Layout = (props) => {
 
-    let { slug } = useParams()
-    console.log(slug)
     return(
         <div className='container'>
             <div className='header-title'> 
