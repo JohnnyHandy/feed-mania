@@ -180,7 +180,7 @@ export const HowToGeekLogo = (props)=>{
 //Business
 export const AtlanticBusinessLogo =(props)=>{
     return(
-    <NavLink to='/business/howtogeek' className='choice-container-item'>
+    <NavLink to='/business/atlatic-business' className='choice-container-item'>
         <img className='imgClass' alt='howtogeek' src={atlanticBusiness} onClick={()=>props.fetchFeedInfo()}/>
     </NavLink>
     )

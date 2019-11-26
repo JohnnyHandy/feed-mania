@@ -36,20 +36,20 @@ class App extends Component {
 //   }
   
   
-//   FetchDataFromRssFeed(url) {
-//     var CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-//     // var urlArray = []
-//     var request = new XMLHttpRequest();
-//     request.onreadystatechange = () => {
-//       if (request.readyState === 4 && request.status === 200) {
-//         var myObj = JSON.parse(request.responseText);
-//         console.log(myObj)
-//         this.setState({jsonObj:myObj})
-//       }
-//     }
-//     request.open("GET",CORS_PROXY+url, true);
-//     request.send();
-//   }
+  // FetchDataFromRssFeed(url) {
+  //   var CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
+  //   // var urlArray = []
+  //   var request = new XMLHttpRequest();
+  //   request.onreadystatechange = () => {
+  //     if (request.readyState === 4 && request.status === 200) {
+  //       var myObj = JSON.parse(request.responseText);
+  //       console.log(myObj)
+  //       this.setState({jsonObj:myObj})
+  //     }
+  //   }
+  //   request.open("GET",CORS_PROXY+url, true);
+  //   request.send();
+  // }
 
   // componentDidMount() {
   //   this.getWiredFeed()
@@ -57,9 +57,6 @@ class App extends Component {
   
  
 render(){
-  const changeFeed = (data)=>{
-   this.FetchDataFromRssFeed(data)
-  }
   return (
       <Layout 
       className='layout'/>   
