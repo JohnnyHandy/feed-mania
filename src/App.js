@@ -2,9 +2,7 @@ import React,{Component} from 'react';
 
 
 import Layout from './UI/Layout/layout'
-import axios from 'axios'
 
-const RSSParser = require('rss-parser');
 
 // (async () => {
 //   const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
