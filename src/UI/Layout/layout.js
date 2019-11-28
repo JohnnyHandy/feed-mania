@@ -2,7 +2,7 @@ import React from 'react'
 import {Route,Switch} from 'react-router-dom'
 
 import MainContainer from '../containers/main'
-
+import ContentContainer  from '../containers/content'
 import './layout.css'
 
 const Layout = (props) => {
@@ -38,7 +38,7 @@ const Layout = (props) => {
                     <MainContainer active='health'/>
                 </Route>
             </Switch>
-            
+            <ContentContainer/>
         </div>
     )
 }

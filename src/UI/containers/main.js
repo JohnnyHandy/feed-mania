@@ -4,70 +4,63 @@ import ChoiceContainer from '../containers/choice'
 
 const Main = (props)=>{  
 return <div className='main-navbar' > 
-    {(props.active ==='initial'||props.active ==='world') ? 
+   
     <div className={'main-item-container'}>
-        <NavLink className='main-item' to='/world'>
-        <i className="fas fa-globe item-icon"></i>
+        <NavLink className='main-item' to={props.active === 'world' ? '/' : '/world'}>  
         World
         <i className="fas fa-globe item-icon"></i>
         </NavLink>
-    </div> :
-    null}      
-    {(props.active === 'initial'||props.active ==='sports') ? 
+         <ChoiceContainer active={props.active}/>
+    </div>      
     <div className='main-item-container'>
-        <NavLink className='main-item' to='/sports'>
-            <i className="fas fa-football-ball item-icon"></i> 
+        <NavLink className='main-item' to={props.active === 'sports' ? '/' : '/sports'}>
+             
             Sports
             <i className="fas fa-football-ball item-icon"></i> 
         </NavLink>
-    </div> :
-    null}
-    {(props.active === 'initial'||props.active ==='technology' ) ? 
+       {props.active === 'sports' ? <ChoiceContainer active={props.active}/> :null}
+    </div> 
     <div className='main-item-container'>
-        <NavLink className='main-item' to='/technology'>
-            <i className="fas fa-robot item-icon"></i>
+        <NavLink className='main-item' to={props.active === 'technology' ? '/' : '/technology'}>
+            
             Technology
             <i className="fas fa-robot item-icon"></i>
         </NavLink>
-    </div> :
-    null}
-    {(props.active === 'initial'||props.active ==='business' ) ? 
+       { props.active ==='technology' ? <ChoiceContainer active={props.active}/> : null}
+    </div> 
     <div className='main-item-container'>
-        <NavLink className='main-item' to='/business'>
-            <i className="fas fa-comment-dollar item-icon"></i>
+        <NavLink className='main-item' to={props.active === 'business' ? '/' : '/business'}>
+            
             Business
             <i className="fas fa-comment-dollar item-icon"></i>
         </NavLink>
-    </div>:
-    null}
-    {(props.active === 'initial'||props.active ==='politics' ) ?
+        { props.active === 'business' ? <ChoiceContainer active={props.active}/> : null}
+    </div>
     <div className='main-item-container'>
-        <NavLink className='main-item' to='/politics'>
-            <i className="fas fa-bullhorn item-icon"></i>
+        <NavLink className='main-item' to={props.active === 'politics' ? '/' : '/politics'}>
+            
             Politics
             <i className="fas fa-bullhorn item-icon"></i>
+            {props.active === 'politics' ? <ChoiceContainer active={props.active}/> : null}
         </NavLink>
-    </div>:
-    null}
-    {(props.active === 'initial'||props.active ==='gaming' ) ?
+    </div>
     <div className='main-item-container'>
-        <NavLink className='main-item' to='/gaming'>
-            <i className="fas fa-gamepad item-icon"></i>
+        <NavLink className='main-item' to={props.active === 'gaming' ? '/' : '/gaming'}>
+           
             Gaming
             <i className="fas fa-gamepad item-icon"></i>
         </NavLink>
-    </div>:
-    null}
-    {(props.active === 'initial'||props.active ==='health' ) ?
+        {props.active === 'gaming' ? <ChoiceContainer active={props.active}/>: null}
+    </div>
     <div className='main-item-container'>
-        <NavLink className='main-item' to='/health'>
-            <i className="fas fa-heartbeat item-icon"></i>
+        <NavLink className='main-item' to={'/health' ? '/' : 'health'}>
+            
             Health
             <i className="fas fa-heartbeat item-icon"></i>
         </NavLink>
-    </div>:
-    null}
-    <ChoiceContainer active={props.active}/>
+        {props.active ===  'health' ? <ChoiceContainer active={props.active}/> :null}
+    </div>
+    {/* <ChoiceContainer active={props.active}/> */}
 </div>
 }
 

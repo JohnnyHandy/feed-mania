@@ -1,8 +1,8 @@
 @media only screen and (max-width: 600px) {
     .imgClass{
-        height:100%;
-        padding:5px;
-        width:100%;
+        margin-top:2%;
+        min-height: 35px;
+        width:50%;
         
         
     }

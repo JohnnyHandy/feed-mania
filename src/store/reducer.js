@@ -1,6 +1,6 @@
 import * as actionTypes from './actionTypes'
 const initialState={
-    content:[]
+    content:{}
 }
 
 const setContent = (state,action)=>{
