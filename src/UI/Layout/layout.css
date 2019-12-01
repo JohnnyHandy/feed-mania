@@ -18,13 +18,19 @@
         display:flex;
         flex-direction:column;
         font-family: 'Stencil', 'sans-serif';
-        font-size: 3.3rem;
+        font-size: 2.3rem;
         height:30%;
         justify-content: center;
         position:absolute;
         transition:all 1s ease;
         top:0;
         width:100%
+    }
+
+    .container .header-title .toggle-navbar{
+        bottom:0;
+        left:3%;
+        position:absolute;    
     }
 
     .container .main-navbar{
@@ -38,16 +44,24 @@
         left:0;
         overflow: scroll;
         position:absolute;
-        width:30%;
+        transition:all 1s;
+        width:0%;
     }
 
+    .container .active-navbar{
+        width:40%
+    }
+
+  
+
     .container .main-navbar .main-item-container{
-        align-items:center;
+        align-items:baseline;
         cursor:pointer;
         display:flex;
         flex-direction: column;
         font-family: 'Stencil', 'sans-serif';
         justify-content: space-around;
+        padding:1%;
         position:relative;
         transition:all 1s;
         width:100%;
@@ -55,14 +69,31 @@
 
     .container .main-navbar .main-item-container .main-item{
         align-items: baseline;
-        color:#BE1010;
-        display:flex;
-        font-size:0.8rem;
-        justify-content: center;
-        margin-top:4%;
+        color: white;
+        display: flex;
+        font-size: 0.8rem;
+        justify-content: space-evenly;
+        margin-left: 13%;
+        margin-top: 4%;
         text-decoration: none;
         transition: all 1s;
-        width:100%;
+        width: 60%;
+        
+    }
+    .container .main-navbar .main-item-container .arrow{
+        color: white;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 20%;
+        width: 30%;   
+    }
+
+    .container .main-navbar .main-item-container .arrow i{
+        align-items: center;     
+        display: flex;
+            
     }
 
     .container .main-navbar .active-item{
@@ -99,13 +130,51 @@
     }
 
     .container .content-container{
+        align-items: center;
         background-color:lightgrey;
         bottom:0;
         display:flex;
+        flex-direction: column;
         height:70%;
+        justify-content: flex-start;
         position:absolute;
         right:0;
-        width:70%
+        transition:all 1s;
+        width:60%
     }
 
+    .container .only-content{
+        width:100%
+    }
+
+    .container .content-container .content-title{
+        color: white;
+        display: flex;
+        font-size: x-large;
+        justify-content: center;
+        width: 50%;
+        max-height: 10%;
+    }
+
+    .container .content-container .feed-options{
+        background-color:white;
+        flex-direction: column;
+        display:flex;
+        text-align: center;
+        transition:all 1s
+    }
+
+    .container .content-container .feed-options .choice-container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding:1%
+        
+    }
+
+    .container .content-container .feed-options .choice-container .choice-container-item{
+        display: flex;
+        justify-content: center;
+        width:30%
+    }
 }

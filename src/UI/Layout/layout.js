@@ -1,44 +1,46 @@
-import React from 'react'
-import {Route,Switch} from 'react-router-dom'
+import React,{useState} from 'react'
+import {Switch,Route} from 'react-router-dom'
 
-import MainContainer from '../containers/main'
+import NavBarContainer from '../containers/navbar'
 import ContentContainer  from '../containers/content'
 import './layout.css'
 
 const Layout = (props) => {
-
+    const [navBar,toggleNavBar]=useState(false)
     return(
         <div className='container'>
             <div className='header-title'> 
                 <div>FEED </div><div>MANIA</div>
+                <div className='toggle-navbar' onClick={()=>toggleNavBar(!navBar)}> <i className='fas fa-bars'></i> </div>     
             </div>
+            <NavBarContainer navBar={navBar}/> 
             <Switch>
                 <Route exact path='/'>
-                    <MainContainer active='initial'/>
+                    <ContentContainer navBar={navBar}/>
                 </Route>
                 <Route path='/world'>
-                    <MainContainer active='world'/>
+                    <ContentContainer feedType={'world'} navBar={navBar}/>
                 </Route>
                 <Route path='/sports'>
-                    <MainContainer active='sports'/>
+                    <ContentContainer feedType={'sports'} navBar={navBar}/>
                 </Route>
                 <Route path='/technology'>
-                    <MainContainer active='technology'/>
+                    <ContentContainer feedType={'technology'} navBar={navBar}/>
                 </Route>
                 <Route path='/business'>
-                    <MainContainer active='business'/>
+                    <ContentContainer feedType={'business'} navBar={navBar}/>
                 </Route>
                 <Route path='/politics'>
-                    <MainContainer active='politics'/>
+                    <ContentContainer feedType={'politics'} navBar={navBar}/>
                 </Route>
                 <Route path='/gaming'>
-                    <MainContainer active='gaming'/>
+                    <ContentContainer feedType={'gaming'} navBar={navBar}/>
                 </Route>
                 <Route path='/health'>
-                    <MainContainer active='health'/>
+                    <ContentContainer feedType={'health'} navBar={navBar}/>
                 </Route>
             </Switch>
-            <ContentContainer/>
+           
         </div>
     )
 }
